@@ -1,8 +1,16 @@
 // import App from "next/app";
 import type { AppProps /*, AppContext */ } from "next/app";
+import Head from "next/head";
+
+import CssBaseline from "@material-ui/core/CssBaseline";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <CssBaseline />
+      <Component {...pageProps} />
+    </>
+  );
 }
 
 // Only uncomment this method if you have blocking data requirements for
