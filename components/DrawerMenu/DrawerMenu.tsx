@@ -8,6 +8,9 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
+import ButtonGroup from "@material-ui/core/ButtonGroup";
+
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -118,6 +121,15 @@ export default function DrawerMenu({ main }) {
           <Typography variant="h6" noWrap>
             Pedro Almeida
           </Typography>
+
+          <ButtonGroup
+            color="secondary"
+            aria-label="outlined primary button group"
+          >
+            <Button>ENG</Button>
+            <Button>FR</Button>
+            <Button>PT</Button>
+          </ButtonGroup>
         </Toolbar>
       </AppBar>
       <Drawer
