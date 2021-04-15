@@ -1,5 +1,7 @@
 import React from "react";
+
 import clsx from "clsx";
+
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -16,6 +18,9 @@ import NotesIcon from "@material-ui/icons/Notes";
 import ContactsIcon from "@material-ui/icons/Contacts";
 import WorkIcon from "@material-ui/icons/Work";
 import MoneyOffIcon from "@material-ui/icons/MoneyOff";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCanadianMapleLeaf } from "@fortawesome/free-brands-svg-icons";
 
 import DrawerMenuItem from "./DrawerMenuItem";
 
@@ -138,6 +143,10 @@ export default function DrawerMenu({ main }) {
         <DrawerMenuItem icon={<HomeIcon />} text="Home" />
         <DrawerMenuItem icon={<WorkIcon />} text="Projects" />
         <DrawerMenuItem icon={<MoneyOffIcon />} text="Volunteering" />
+        <DrawerMenuItem
+          icon={<FontAwesomeIcon icon={faCanadianMapleLeaf} size="2x" />}
+          text="Canadian Experience"
+        />
         <DrawerMenuItem icon={<NotesIcon />} text="Articles" />
         <Divider />
         <DrawerMenuItem icon={<ContactsIcon />} text="Contact" />
