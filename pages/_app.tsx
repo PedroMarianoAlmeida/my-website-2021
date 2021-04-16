@@ -25,6 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           menu={<DrawerContent />}
           open={openDrawer}
           setOpen={setOpenDrawer}
+          drawerWidth={240}
         />
       </ThemeProvider>
     </>
