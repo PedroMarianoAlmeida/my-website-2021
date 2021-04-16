@@ -8,7 +8,7 @@ import Document, {
 } from "next/document";
 
 import { ServerStyleSheets } from "@material-ui/core/styles";
-import theme from "./../lib/theme";
+import theme from "./../src/lib/theme";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {

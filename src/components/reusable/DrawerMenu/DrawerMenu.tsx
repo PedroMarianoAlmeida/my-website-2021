@@ -6,26 +6,14 @@ import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
-import ButtonGroup from "@material-ui/core/ButtonGroup";
 
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
+import Toolbar from "@material-ui/core/Toolbar";
+
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import HomeIcon from "@material-ui/icons/Home";
-import NotesIcon from "@material-ui/icons/Notes";
-import ContactsIcon from "@material-ui/icons/Contacts";
-import WorkIcon from "@material-ui/icons/Work";
-import MoneyOffIcon from "@material-ui/icons/MoneyOff";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCanadianMapleLeaf } from "@fortawesome/free-brands-svg-icons";
-
-import DrawerMenuItem from "./DrawerMenuItem";
+import MenuIcon from "@material-ui/icons/Menu";
 
 const drawerWidth = 240;
 
@@ -86,17 +74,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function DrawerMenu({ main }) {
+export default function DrawerMenu({ main, menu, open, setOpen, header }) {
   const classes = useStyles();
   const theme = useTheme();
-  const [open, setOpen] = React.useState(false);
-
-  const handleDrawerOpen = () => {
-    setOpen(true);
-  };
 
   const handleDrawerClose = () => {
     setOpen(false);
+  };
+
+  const handleDrawerOpen = () => {
+    setOpen(true);
   };
 
   return (
@@ -118,18 +105,7 @@ export default function DrawerMenu({ main }) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap>
-            Pedro Almeida
-          </Typography>
-
-          <ButtonGroup
-            color="secondary"
-            aria-label="outlined primary button group"
-          >
-            <Button>ENG</Button>
-            <Button>FR</Button>
-            <Button>PT</Button>
-          </ButtonGroup>
+          {header}
         </Toolbar>
       </AppBar>
       <Drawer
@@ -152,16 +128,7 @@ export default function DrawerMenu({ main }) {
         </div>
         <Divider />
 
-        <DrawerMenuItem icon={<HomeIcon />} text="Home" />
-        <DrawerMenuItem icon={<WorkIcon />} text="Projects" />
-        <DrawerMenuItem icon={<MoneyOffIcon />} text="Volunteering" />
-        <DrawerMenuItem
-          icon={<FontAwesomeIcon icon={faCanadianMapleLeaf} size="2x" />}
-          text="Canadian Experience"
-        />
-        <DrawerMenuItem icon={<NotesIcon />} text="Articles" />
-        <Divider />
-        <DrawerMenuItem icon={<ContactsIcon />} text="Contact" />
+        {menu}
       </Drawer>
       <main
         className={clsx(classes.content, {
