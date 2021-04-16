@@ -126,7 +126,6 @@ export default function DrawerMenu({ main, menu, open, setOpen, header }) {
             )}
           </IconButton>
         </div>
-        <Divider />
 
         {menu}
       </Drawer>
