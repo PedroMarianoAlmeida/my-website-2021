@@ -2,7 +2,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
 
-const DrawerHeader = ({ setOpen }) => {
+const DrawerHeader = () => {
   return (
     <>
       <Typography variant="h6" noWrap>
