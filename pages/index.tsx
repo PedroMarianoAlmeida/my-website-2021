@@ -1,10 +1,10 @@
-import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
-import LateralCard from "../src/components/specific/IndexPage/LateralCard/LateralCard";
+import Grid from '@material-ui/core/Grid'
+import Typography from '@material-ui/core/Typography'
+import LateralCard from '../src/components/specific/IndexPage/LateralCard/LateralCard'
 
 export default function Home() {
   return (
-    <Grid container spacing={2}>
+    <Grid container>
       <Grid xs={12} sm={8}>
         <Typography paragraph>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -41,5 +41,5 @@ export default function Home() {
         <LateralCard />
       </Grid>
     </Grid>
-  );
+  )
 }

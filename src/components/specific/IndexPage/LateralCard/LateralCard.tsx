@@ -1,25 +1,23 @@
-import Paper from "@material-ui/core/Paper";
-import Grid from "@material-ui/core/Grid";
+import Box from '@material-ui/core/Box'
+import Typography from '@material-ui/core/Typography'
 
-import ProfileSummary from "./ProfileSummary";
-import LanguageSecction from "./LanguageSection";
+import ProfileSummary from './ProfileSummary'
+import LanguageSection from './LanguageSection'
 
 const LateralCard = () => {
   return (
-    <Paper>
-      <Grid container spacing={1}>
-        <Grid xs={12}>
-          <ProfileSummary />
-        </Grid>
+    <Box display="flex" flexDirection="column" height="100%">
+      <ProfileSummary />
 
-        <Grid xs={12}>
-          <LanguageSecction />
-        </Grid>
-        <Grid xs={12}>Skils</Grid>
-        <Grid xs={12}>Social Network</Grid>
-      </Grid>
-    </Paper>
-  );
-};
+      <LanguageSection />
 
-export default LateralCard;
+      <Box flexGrow={1} alignSelf="center">
+        <Typography>Skills</Typography>
+      </Box>
+
+      <Typography>Social Network</Typography>
+    </Box>
+  )
+}
+
+export default LateralCard
