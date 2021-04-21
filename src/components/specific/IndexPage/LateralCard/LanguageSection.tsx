@@ -19,7 +19,7 @@ const LanguageSection = () => {
 
   return (
     <Box py={2} className={classes.root} boxShadow={3}>
-      <Typography variant="h5" align="center">
+      <Typography variant="h6" align="center">
         Language Skills
       </Typography>
 

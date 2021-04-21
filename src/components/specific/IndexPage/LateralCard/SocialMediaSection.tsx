@@ -26,12 +26,7 @@ const SocialMediaSection = () => {
         Contact
       </Typography>
 
-      <Box
-        mt={2}
-        display="flex"
-        flexDirection="row"
-        justifyContent="space-around"
-      >
+      <Box display="flex" flexDirection="row" justifyContent="space-around">
         <ExternalIconButton
           address="https://www.linkedin.com/in/pedroprogrammer/"
           icon={<FontAwesomeIcon icon={faLinkedin} />}

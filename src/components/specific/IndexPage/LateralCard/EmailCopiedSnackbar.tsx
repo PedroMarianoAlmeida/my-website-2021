@@ -2,9 +2,7 @@ import { useState } from 'react'
 
 import IconButton from '@material-ui/core/IconButton'
 import Snackbar from '@material-ui/core/Snackbar'
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+import DeleteIcon from '@material-ui/icons/Delete'
 
 const EmailCopiedSnackbar = () => {
   const [open, setOpen] = useState(false)
@@ -18,7 +16,7 @@ const EmailCopiedSnackbar = () => {
   return (
     <>
       <IconButton aria-label="email" color="primary" onClick={handleClick}>
-        <FontAwesomeIcon icon={faEnvelope} />
+        <DeleteIcon />
       </IconButton>
 
       <Snackbar
