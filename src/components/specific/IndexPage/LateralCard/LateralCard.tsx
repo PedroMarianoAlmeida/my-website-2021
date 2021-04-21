@@ -3,6 +3,7 @@ import Typography from '@material-ui/core/Typography'
 
 import ProfileSummary from './ProfileSummary'
 import LanguageSection from './LanguageSection'
+import SocialMediaSection from './SocialMediaSection'
 
 const LateralCard = () => {
   return (
@@ -15,7 +16,7 @@ const LateralCard = () => {
         <Typography>Skills</Typography>
       </Box>
 
-      <Typography>Social Network</Typography>
+      <SocialMediaSection />
     </Box>
   )
 }
