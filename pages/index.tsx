@@ -5,7 +5,7 @@ import LateralCard from '../src/components/specific/IndexPage/LateralCard/Latera
 export default function Home() {
   return (
     <Grid container>
-      <Grid xs={12} sm={8}>
+      <Grid item xs={12} sm={8}>
         <Typography paragraph>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus
@@ -37,7 +37,7 @@ export default function Home() {
         </Typography>
       </Grid>
 
-      <Grid xs={12} sm={4}>
+      <Grid item xs={12} sm={4}>
         <LateralCard />
       </Grid>
     </Grid>

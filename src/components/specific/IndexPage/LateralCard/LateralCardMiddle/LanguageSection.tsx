@@ -1,33 +1,24 @@
 import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography'
-import { makeStyles } from '@material-ui/core/styles'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar as fullStar } from '@fortawesome/free-solid-svg-icons'
 import { faStar as emptyStar } from '@fortawesome/free-regular-svg-icons'
 
-import AvatarWithCaption from '../../../reusable/AvatarWithCaption'
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    backgroundColor: '#92A8A8',
-  },
-}))
+import AvatarWithCaption from '../../../../reusable/AvatarWithCaption'
 
 const LanguageSection = () => {
-  const classes = useStyles()
-
   return (
-    <Box py={2} className={classes.root} boxShadow={3}>
+    <Box py={2}>
       <Typography variant="h6" align="center">
         Language Skills
       </Typography>
 
       <Box
-        mt={2}
         display="flex"
         flexDirection="row"
         justifyContent="space-around"
+        pt={1}
       >
         <AvatarWithCaption
           avatarAddress="/images/languages/uk_flag.png"

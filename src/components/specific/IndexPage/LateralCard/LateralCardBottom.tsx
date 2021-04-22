@@ -11,13 +11,13 @@ import { faTelegram } from '@fortawesome/free-brands-svg-icons'
 import ExternalIconButton from '../../../reusable/ExternalIconButton'
 import EmailCopiedSnackbar from './EmailCopiedSnackbar'
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    backgroundColor: '#92A8A8',
-  },
-}))
+const LateralCardBottom = ({ backgroundColor }) => {
+  const useStyles = makeStyles((theme) => ({
+    root: {
+      backgroundColor,
+    },
+  }))
 
-const SocialMediaSection = () => {
   const classes = useStyles()
 
   return (
@@ -57,4 +57,4 @@ const SocialMediaSection = () => {
   )
 }
 
-export default SocialMediaSection
+export default LateralCardBottom

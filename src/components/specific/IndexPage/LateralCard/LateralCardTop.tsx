@@ -3,17 +3,17 @@ import Typography from '@material-ui/core/Typography'
 import Box from '@material-ui/core/Box'
 import { makeStyles } from '@material-ui/core/styles'
 
-const useStyles = makeStyles((theme) => ({
-  large: {
-    width: theme.spacing(10),
-    height: theme.spacing(10),
-  },
-  root: {
-    backgroundColor: '#5DA9AC',
-  },
-}))
+const LateralCardTop = ({ backgroundColor }) => {
+  const useStyles = makeStyles((theme) => ({
+    large: {
+      width: theme.spacing(10),
+      height: theme.spacing(10),
+    },
+    root: {
+      backgroundColor,
+    },
+  }))
 
-const Summary = () => {
   const classes = useStyles()
 
   return (
@@ -39,4 +39,4 @@ const Summary = () => {
   )
 }
 
-export default Summary
+export default LateralCardTop
