@@ -15,7 +15,7 @@ const LateralCard = ({ fitHeight }) => {
         flexDirection="column"
       >
         <Box>
-          <LateralCardTop backgroundColor="#E62D20" />
+          <LateralCardTop backgroundColor="#d52b1e" />
         </Box>
 
         <Box overflow="auto" flexGrow={1} flexShrink={1}>
@@ -23,7 +23,7 @@ const LateralCard = ({ fitHeight }) => {
         </Box>
 
         <Box height="20px">
-          <LateralCardBottom backgroundColor="#E62D20" />
+          <LateralCardBottom backgroundColor="#d52b1e" />
         </Box>
       </Box>
     </Paper>

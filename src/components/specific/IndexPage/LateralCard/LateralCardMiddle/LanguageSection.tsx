@@ -34,7 +34,7 @@ const LanguageSection = () => {
         />
 
         <AvatarWithCaption
-          avatarAddress="/images/languages/quebec.gif"
+          avatarAddress="/images/languages/quebec.svg"
           alt="French Skill Basic"
           caption={
             <>
