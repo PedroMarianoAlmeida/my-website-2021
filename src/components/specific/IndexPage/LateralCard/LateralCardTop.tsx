@@ -33,9 +33,13 @@ const LateralCardTop = ({ backgroundColor }) => {
         />
       </Box>
       <Box my={1}>
-        <Typography align="center">Pedro Almeida</Typography>
+        <Typography align="center" variant="h5">
+          Pedro Almeida
+        </Typography>
       </Box>
-      <Typography align="center">Frontend Developer</Typography>
+      <Box fontStyle="italic">
+        <Typography align="center">Frontend Developer</Typography>
+      </Box>
     </Box>
   )
 }
