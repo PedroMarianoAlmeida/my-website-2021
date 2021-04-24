@@ -1,11 +1,14 @@
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import LateralCard from '../src/components/specific/IndexPage/LateralCard/LateralCard'
+import useMediaQuery from '@material-ui/core/useMediaQuery'
 
 export default function Home() {
+  const matches = useMediaQuery('(min-width:960px)') //md break point
+
   return (
     <Grid container>
-      <Grid item xs={12} sm={8}>
+      <Grid item xs={12} md={8}>
         <Typography paragraph>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus
@@ -37,8 +40,8 @@ export default function Home() {
         </Typography>
       </Grid>
 
-      <Grid item xs={12} sm={4}>
-        <LateralCard />
+      <Grid item xs={12} md={4}>
+        <LateralCard fitHeight={matches} />
       </Grid>
     </Grid>
   )

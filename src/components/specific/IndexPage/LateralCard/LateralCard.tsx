@@ -5,29 +5,23 @@ import LateralCardTop from './LateralCardTop'
 import LateralCardBottom from './LateralCardBottom'
 import LateralCardMiddle from './LateralCardMiddle/LateralCardMIddle'
 
-import { makeStyles } from '@material-ui/core/styles'
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'grid',
-    gridTemplateRows: 'fit-content(1fr) fit-content(2fr) fit-content(1fr)',
-  },
-}))
-
-const LateralCard = () => {
-  const classes = useStyles()
-
+const LateralCard = ({ fitHeight }) => {
+  console.log(fitHeight)
   return (
-    <Box className={classes.root}>
+    <Box
+      display="flex"
+      height={fitHeight ? '67vh' : null}
+      flexDirection="column"
+    >
       <Box>
         <LateralCardTop backgroundColor="#E62D20" />
       </Box>
 
-      <Box overflow="hidden">
-        <Typography variant="p">TEXT </Typography>
-        {/* <LateralCardMiddle backgroundColor="#EA7067" /> */}
+      <Box overflow="auto" flexGrow={1} flexShrink={1}>
+        <Typography>{fitHeight}</Typography>
+        <LateralCardMiddle backgroundColor="#EA7067" />
       </Box>
-      <Box>
+      <Box height="20px">
         <LateralCardBottom backgroundColor="#E62D20" />
       </Box>
     </Box>

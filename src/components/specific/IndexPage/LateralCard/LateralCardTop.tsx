@@ -18,10 +18,11 @@ const LateralCardTop = ({ backgroundColor }) => {
 
   return (
     <Box
-      py={5}
       className={classes.root}
       display="flex"
+      py={1}
       flexDirection="column"
+      justifyContent="center"
       boxShadow={5}
     >
       <Box alignSelf="center">
