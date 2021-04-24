@@ -51,6 +51,7 @@ const LateralCardBottom = ({ backgroundColor }) => {
         flexDirection="row"
         justifyContent="space-around"
         alignItems="center"
+        overflow="hidden"
       >
         {socialMedia.map((media) => (
           <ExternalIconButton

@@ -5,20 +5,25 @@ import Box from '@material-ui/core/Box'
 import Tooltip from '@material-ui/core/Tooltip'
 
 const skills = [
-  { name: 'Bootstrap', path: 'bootstrap.svg' },
-  { name: 'CSS', path: 'css.svg' },
+  { name: 'JavaScript', path: 'javascript.svg' },
+  { name: 'TypeScript', path: 'typescript.svg' },
+  { name: 'React', path: 'react.svg' },
+  { name: 'Next.js', path: 'next-js.svg' },
   { name: 'Firebase', path: 'firebase.svg' },
+
   { name: 'Git', path: 'git.svg' },
   { name: 'Github', path: 'github.svg' },
+
+  { name: 'CSS', path: 'css.svg' },
+  { name: 'Material UI', path: 'material-ui.svg' },
+  { name: 'Bootstrap', path: 'bootstrap.svg' },
+  { name: 'Tailwind', path: 'tailwind.svg' },
+
   { name: 'Graphql', path: 'graphql.svg' },
   { name: 'Heroku', path: 'heroku.svg' },
   { name: 'HTML', path: 'html.svg' },
-  { name: 'JavaScript', path: 'javascript.svg' },
-  { name: 'Material UI', path: 'material-ui.svg' },
-  { name: 'Next.js', path: 'next-js.svg' },
+
   { name: 'Prettier', path: 'prettier.svg' },
-  { name: 'React', path: 'react.svg' },
-  { name: 'Tailwind', path: 'tailwind.svg' },
 ]
 
 const SkillSection = () => {
@@ -33,7 +38,6 @@ const SkillSection = () => {
           display="flex"
           flexDirection="row"
           flexWrap="wrap"
-          px={2}
           justifyContent="center"
         >
           {skills.map((skill) => (

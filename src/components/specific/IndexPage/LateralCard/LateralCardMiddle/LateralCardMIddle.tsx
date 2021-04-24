@@ -4,6 +4,7 @@ import Divider from '@material-ui/core/Divider'
 import { makeStyles } from '@material-ui/core/styles'
 import LanguageSection from './LanguageSection'
 import SkillSection from './SkillSection'
+import SoftSkillsSection from './SoftSkillsSection'
 
 const LateralCardMiddle = ({ backgroundColor }) => {
   const useStyles = makeStyles((theme) => ({
@@ -15,10 +16,19 @@ const LateralCardMiddle = ({ backgroundColor }) => {
   const classes = useStyles()
 
   return (
-    <Box px={2} className={classes.root}>
+    <Box className={classes.root}>
       <LanguageSection />
-      <Divider />
+      <Box px={2}>
+        <Divider />
+      </Box>
+
       <SkillSection />
+
+      <Box px={2}>
+        <Divider />
+      </Box>
+
+      <SoftSkillsSection />
     </Box>
   )
 }
