@@ -19,6 +19,7 @@ const LanguageSection = () => {
         flexDirection="row"
         justifyContent="space-around"
         pt={1}
+        flexWrap="wrap"
       >
         <AvatarWithCaption
           avatarAddress="/images/languages/canada.svg"
