@@ -29,7 +29,13 @@ const SkillSection = () => {
           Tech Stack
         </Typography>
 
-        <Box display="flex" flexDirection="row" flexWrap="wrap" px={2}>
+        <Box
+          display="flex"
+          flexDirection="row"
+          flexWrap="wrap"
+          px={2}
+          justifyContent="center"
+        >
           {skills.map((skill) => (
             <Tooltip title={skill.name} placement="top" key={skill.name}>
               <Box m={1}>

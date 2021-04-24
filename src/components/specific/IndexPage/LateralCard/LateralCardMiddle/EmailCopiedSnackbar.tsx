@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { useState } from 'react'
 
 import IconButton from '@material-ui/core/IconButton'
@@ -16,7 +17,12 @@ const EmailCopiedSnackbar = () => {
   return (
     <>
       <IconButton aria-label="email" color="primary" onClick={handleClick}>
-        <DeleteIcon />
+        <Image
+          alt="pedroalmeidaprogrammer@gmail"
+          src={`/images/logos/envelope.svg`}
+          height={'30px'}
+          width={'30px'}
+        />
       </IconButton>
 
       <Snackbar

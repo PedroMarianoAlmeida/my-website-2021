@@ -1,15 +1,35 @@
+import Image from 'next/image'
+
 import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
-import { faTelegram } from '@fortawesome/free-brands-svg-icons'
-
 import ExternalIconButton from '../../../reusable/ExternalIconButton'
-import EmailCopiedSnackbar from './EmailCopiedSnackbar'
+import EmailCopiedSnackbar from './LateralCardMiddle/EmailCopiedSnackbar'
+
+const socialMedia = [
+  {
+    name: 'Linkedin',
+    path: 'linkedin.svg',
+    address: 'https://www.linkedin.com/in/pedroprogrammer/',
+  },
+  {
+    name: 'Github',
+    path: 'github.svg',
+    address: 'https://github.com/PedroMarianoAlmeida',
+  },
+  {
+    name: 'Whatsapp',
+    path: 'whatsapp.svg',
+    address:
+      'https://api.whatsapp.com/send?phone=+5521981853414&text=Hi%20Pedro',
+  },
+  {
+    name: 'Telegram',
+    path: 'telegram.svg',
+    address: 'https://www.t.me/pedrobrasiloficial',
+  },
+]
 
 const LateralCardBottom = ({ backgroundColor }) => {
   const useStyles = makeStyles((theme) => ({
@@ -21,35 +41,32 @@ const LateralCardBottom = ({ backgroundColor }) => {
   const classes = useStyles()
 
   return (
-    <Box py={2} className={classes.root} boxShadow={3}>
+    <Box py={2} className={classes.root} boxShadow={5}>
       <Typography variant="h6" align="center">
         Contact
       </Typography>
 
-      <Box display="flex" flexDirection="row" justifyContent="space-around">
-        <ExternalIconButton
-          address="https://www.linkedin.com/in/pedroprogrammer/"
-          icon={<FontAwesomeIcon icon={faLinkedin} />}
-          alt="linkedIn"
-        />
-
-        <ExternalIconButton
-          address="https://github.com/PedroMarianoAlmeida"
-          icon={<FontAwesomeIcon icon={faGithub} />}
-          alt="Github"
-        />
-
-        <ExternalIconButton
-          address="https://api.whatsapp.com/send?phone=+5521981853414&text=Hi%20Pedro"
-          icon={<FontAwesomeIcon icon={faWhatsapp} />}
-          alt="Whatsapp"
-        />
-
-        <ExternalIconButton
-          address="https://www.t.me/pedrobrasiloficial"
-          icon={<FontAwesomeIcon icon={faTelegram} />}
-          alt="Telegram"
-        />
+      <Box
+        display="flex"
+        flexDirection="row"
+        justifyContent="space-around"
+        alignItems="center"
+      >
+        {socialMedia.map((media) => (
+          <ExternalIconButton
+            address={media.address}
+            icon={
+              <Image
+                alt={media.name}
+                src={`/images/logos/${media.path}`}
+                height={'30px'}
+                width={'30px'}
+              />
+            }
+            alt={media.name}
+            key={media.name}
+          />
+        ))}
 
         <EmailCopiedSnackbar />
       </Box>

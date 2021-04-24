@@ -15,7 +15,7 @@ const LateralCardMiddle = ({ backgroundColor }) => {
   const classes = useStyles()
 
   return (
-    <Box px={2} className={classes.root} boxShadow={3}>
+    <Box px={2} className={classes.root}>
       <LanguageSection />
       <Divider />
       <SkillSection />
