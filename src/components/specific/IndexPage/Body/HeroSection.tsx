@@ -13,7 +13,7 @@ const TypewriterEffect: TypewriterType = Typewriter as any
 
 const HeroSection = () => {
   return (
-    <Typography variant="h1">
+    <Typography variant="h2" align="center">
       Lets{' '}
       <TypewriterEffect
         component="span"
