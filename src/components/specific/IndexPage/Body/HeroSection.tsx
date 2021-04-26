@@ -1,26 +1,48 @@
+import { FunctionComponent } from 'react'
+import Typewriter, { Options, TypewriterClass } from 'typewriter-effect'
+
 import Typography from '@material-ui/core/Typography'
 
-const textAnimated = [
-  { text: 'Lets grow together', duration: 500 },
-  { text: 'Lets grow| together', duration: 500 },
-  { text: 'Lets grow together', duration: 500 },
-  { text: 'Lets gro| together', duration: 150 },
-  { text: 'Lets gr| together', duration: 150 },
-  { text: 'Lets g| together', duration: 150 },
-  { text: 'Lets | together', duration: 150 },
-  { text: 'Lets l| together', duration: 150 },
-  { text: 'Lets le| together', duration: 150 },
-  { text: 'Lets lea| together', duration: 150 },
-  { text: 'Lets lear| together', duration: 150 },
-  { text: 'Lets learn| together', duration: 150 },
-  { text: 'Lets learn together', duration: 500 },
-  { text: 'Lets learn| together', duration: 500 },
-  { text: 'Lets learn together', duration: 500 },
-  { text: 'Lets learn| together', duration: 500 },
-]
+type TypewriterType = FunctionComponent<{
+  component?: string
+  onInit?: (typewriter: TypewriterClass) => void
+  options?: Partial<Options>
+}>
+
+const TypewriterEffect: TypewriterType = Typewriter as any
 
 const HeroSection = () => {
-  return <Typography variant="h1">Lets grow together</Typography>
+  return (
+    <Typography variant="h1">
+      Lets{' '}
+      <TypewriterEffect
+        component="span"
+        options={{
+          loop: true,
+        }}
+        onInit={(typewriter) => {
+          typewriter
+            .typeString('🛠️ work 🛠️')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString('📖 learn 📖')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString('💻 code 💻')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString('🌱 grow 🌴')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString('change the 🌎')
+            .pauseFor(2500)
+            .deleteAll()
+            .start()
+        }}
+      />{' '}
+      together
+    </Typography>
+  )
 }
 
 export default HeroSection

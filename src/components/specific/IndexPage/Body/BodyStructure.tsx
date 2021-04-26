@@ -2,7 +2,7 @@ import Grid from '@material-ui/core/Grid'
 
 import HeroSection from './HeroSection'
 
-const BodySctructure = () => {
+const BodyStructure = () => {
   return (
     <Grid container spacing={3}>
       <Grid item xs={12}>
@@ -12,4 +12,4 @@ const BodySctructure = () => {
   )
 }
 
-export default BodySctructure
+export default BodyStructure

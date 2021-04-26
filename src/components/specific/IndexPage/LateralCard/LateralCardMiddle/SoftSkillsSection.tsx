@@ -39,7 +39,7 @@ const SoftSkillsSection = () => {
       </Typography>
       <List>
         {skills.map((skill) => (
-          <Item skill={skill} />
+          <Item skill={skill} key={skill} />
         ))}
       </List>
     </>
