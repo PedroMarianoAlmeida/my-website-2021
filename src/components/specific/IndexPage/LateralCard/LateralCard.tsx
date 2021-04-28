@@ -5,12 +5,12 @@ import LateralCardTop from './LateralCardTop'
 import LateralCardBottom from './LateralCardBottom'
 import LateralCardMiddle from './LateralCardMiddle/LateralCardMIddle'
 
-const LateralCard = ({ fitHeight }) => {
+const LateralCard = ({ desktopLayout }) => {
   return (
     <Paper variant="outlined" square elevation={3}>
       <Box
         display="flex"
-        height={fitHeight ? '67vh' : null}
+        height={desktopLayout ? '67vh' : null}
         flexDirection="column"
       >
         <Box>

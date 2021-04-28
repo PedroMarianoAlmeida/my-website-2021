@@ -1,56 +1,24 @@
 import Grid from '@material-ui/core/Grid'
-import Typography from '@material-ui/core/Typography'
-import Button from '@material-ui/core/Button'
+import Box from '@material-ui/core/Box'
 
 import HeroSection from './HeroSection'
+import WorkTypes from './WorkTypes'
+import ActionButtons from './ActionButtons'
 
-const BodyStructure = () => {
+const BodyStructure = ({ desktopLayout }) => {
   return (
-    <Grid container spacing={3}>
-      <Grid item xs={12}>
+    <Box
+      mb={desktopLayout ? 0 : 2}
+      display="flex"
+      height={desktopLayout ? '67vh' : null}
+      flexDirection="column"
+    >
+      <Grid container spacing={3}>
         <HeroSection />
+        <WorkTypes />
+        <ActionButtons />
       </Grid>
-
-      <Grid item xs={12}>
-        <Grid container spacing={2} alignItems="center">
-          <Grid item xs={12}>
-            <Typography align="center" variant="h3">
-              I worked with
-            </Typography>
-          </Grid>
-
-          <Grid item xs={12} md={4}>
-            <Typography align="center" variant="h4">
-              Open Source
-            </Typography>
-          </Grid>
-
-          <Grid item xs={12} md={4}>
-            <Typography align="center" variant="h4">
-              Commercial
-            </Typography>
-          </Grid>
-
-          <Grid item xs={12} md={4}>
-            <Typography align="center" variant="h4">
-              Freelancer
-            </Typography>
-          </Grid>
-
-          <Grid item xs={12} md={6}>
-            <Button variant="outlined" color="primary" size="large">
-              Portfolio
-            </Button>
-          </Grid>
-
-          <Grid item xs={12} md={6}>
-            <Button variant="outlined" color="primary" size="large">
-              Contact
-            </Button>
-          </Grid>
-        </Grid>
-      </Grid>
-    </Grid>
+    </Box>
   )
 }
 
