@@ -7,12 +7,7 @@ import ActionButtons from './ActionButtons'
 
 const BodyStructure = ({ desktopLayout }) => {
   return (
-    <Box
-      mb={desktopLayout ? 0 : 2}
-      display="flex"
-      height={desktopLayout ? '67vh' : null}
-      flexDirection="column"
-    >
+    <Box mb={desktopLayout ? 0 : 2} display="flex" flexDirection="column">
       <Grid container spacing={3}>
         <HeroSection />
         <WorkTypes />

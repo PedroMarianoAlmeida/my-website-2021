@@ -1,35 +1,31 @@
-import { useState } from "react";
+import type { AppProps } from 'next/app'
 
-// import App from "next/app";
-import type { AppProps /*, AppContext */ } from "next/app";
+import CssBaseline from '@material-ui/core/CssBaseline'
+import Box from '@material-ui/core/Box'
+import { ThemeProvider, makeStyles } from '@material-ui/core/styles'
 
-import theme from "./../src/lib/theme";
+import theme from './../src/lib/theme'
+import MyMenu from '../src/components/specific/Menu/MyMenu'
 
-import CssBaseline from "@material-ui/core/CssBaseline";
+const useStyles = makeStyles((appBarHeight) => ({
+  content: {
+    marginTop: '64px',
+  },
+}))
 
-import DrawerMenu from "../src/components/reusable/DrawerMenu/DrawerMenu";
-import DrawerContent from "../src/components/specific/Drawer/DrawerContent";
-import DrawerHeader from "./../src/components/specific/Drawer/DrawerHeader";
-import { ThemeProvider } from "@material-ui/core/styles";
+const appBarHeight = '64px'
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const [openDrawer, setOpenDrawer] = useState(false);
-
+  const classes = useStyles(appBarHeight)
   return (
-    <>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <DrawerMenu
-          main={<Component {...pageProps} />}
-          header={<DrawerHeader />}
-          menu={<DrawerContent />}
-          open={openDrawer}
-          setOpen={setOpenDrawer}
-          drawerWidth={240}
-        />
-      </ThemeProvider>
-    </>
-  );
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <MyMenu appBarHeight={appBarHeight} />
+      <Box className={classes.content}>
+        <Component {...pageProps} appBarHeight={appBarHeight} />
+      </Box>
+    </ThemeProvider>
+  )
 }
 
-export default MyApp;
+export default MyApp
