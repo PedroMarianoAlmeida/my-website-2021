@@ -1,20 +1,34 @@
-import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
 import Box from '@material-ui/core/Box'
 
-const ActionButtons = () => {
-  return (
-    <Grid item xs={12}>
-      <Box display="flex" justifyContent="space-around">
-        <Button variant="outlined" color="primary" size="large">
-          Portfolio
-        </Button>
+import { makeStyles } from '@material-ui/core/styles'
 
-        <Button variant="outlined" color="primary" size="large">
-          Contact
-        </Button>
-      </Box>
-    </Grid>
+const useStyles = makeStyles({
+  button: {
+    margin: '0 10px',
+    width: '150px',
+    height: '70px',
+  },
+})
+
+const ActionButtons = () => {
+  const classes = useStyles()
+
+  return (
+    <Box display="flex" justifyContent="center">
+      <Button
+        className={classes.button}
+        variant="outlined"
+        color="primary"
+        size="large"
+      >
+        Portfolio
+      </Button>
+
+      <Button className={classes.button} variant="outlined" color="primary">
+        Contact
+      </Button>
+    </Box>
   )
 }
 

@@ -1,33 +1,27 @@
-import Grid from '@material-ui/core/Grid'
+import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography'
 
 const WorkTypes = () => {
   return (
-    <>
-      <Grid item xs={12}>
-        <Typography align="center" variant="h3">
-          I worked with
-        </Typography>
-      </Grid>
+    <Box my={3}>
+      <Typography align="center" variant="h3">
+        I worked with
+      </Typography>
 
-      <Grid item xs={12} md={4}>
+      <Box display="flex" justifyContent="space-around" mt={1}>
         <Typography align="center" variant="h4">
           Open Source
         </Typography>
-      </Grid>
 
-      <Grid item xs={12} md={4}>
         <Typography align="center" variant="h4">
           Commercial
         </Typography>
-      </Grid>
 
-      <Grid item xs={12} md={4}>
         <Typography align="center" variant="h4">
           Freelancer
         </Typography>
-      </Grid>
-    </>
+      </Box>
+    </Box>
   )
 }
 

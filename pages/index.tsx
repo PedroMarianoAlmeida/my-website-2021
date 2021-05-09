@@ -8,7 +8,7 @@ import { makeStyles } from '@material-ui/core/styles'
 const useStyles = makeStyles((appBarHeight) => ({
   rootDesktop: {
     display: 'grid',
-    gridTemplateColumns: '1fr 300px',
+    gridTemplateColumns: 'calc(100vw - 300px) 300px',
     height: `calc(100vh - 64px)`,
     alignItems: 'center',
     justifyItems: 'center',

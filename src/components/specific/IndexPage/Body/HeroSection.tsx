@@ -2,8 +2,9 @@ import { FunctionComponent } from 'react'
 import Typewriter, { Options, TypewriterClass } from 'typewriter-effect'
 
 import Typography from '@material-ui/core/Typography'
-import Grid from '@material-ui/core/Grid'
+import Box from '@material-ui/core/Box'
 
+//This is just for the Typewriter works properly in a tsx file
 type TypewriterType = FunctionComponent<{
   component?: string
   onInit?: (typewriter: TypewriterClass) => void
@@ -14,7 +15,8 @@ const TypewriterEffect: TypewriterType = Typewriter as any
 
 const HeroSection = () => {
   return (
-    <Grid item xs={12}>
+    <Box height="8rem" display="flex" alignItems="center">
+      {' '}
       <Typography variant="h2" align="center">
         Lets{' '}
         <TypewriterEffect
@@ -44,7 +46,7 @@ const HeroSection = () => {
         />{' '}
         together
       </Typography>
-    </Grid>
+    </Box>
   )
 }
 
