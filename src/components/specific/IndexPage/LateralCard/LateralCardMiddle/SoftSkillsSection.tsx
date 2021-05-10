@@ -15,7 +15,6 @@ const skills = [
 const Item = ({ skill }) => {
   const useStyles = makeStyles((theme) => ({
     icon: {
-      color: 'green',
       marginRight: `${theme.spacing(2)}px`,
     },
   }))

@@ -18,14 +18,14 @@ const ActionButtons = () => {
     <Box display="flex" justifyContent="center">
       <Button
         className={classes.button}
-        variant="outlined"
+        variant="contained"
         color="primary"
         size="large"
       >
         Portfolio
       </Button>
 
-      <Button className={classes.button} variant="outlined" color="primary">
+      <Button className={classes.button} variant="contained" color="primary">
         Contact
       </Button>
     </Box>

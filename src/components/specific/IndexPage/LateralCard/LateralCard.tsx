@@ -16,14 +16,14 @@ const LateralCard = ({ desktopLayout }) => {
   const classes = useStyles()
   return (
     <Paper variant="outlined" square elevation={3} className={classes.root}>
-      <LateralCardTop backgroundColor="#d52b1e" />
+      <LateralCardTop backgroundColor="#02A9EA" />
 
       <LateralCardMiddle
-        backgroundColor="#EA7067"
+        backgroundColor="#47FF47"
         desktopLayout={desktopLayout}
       />
 
-      <LateralCardBottom backgroundColor="#d52b1e" />
+      <LateralCardBottom backgroundColor="#02A9EA" />
     </Paper>
   )
 }
