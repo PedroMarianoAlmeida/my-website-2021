@@ -24,7 +24,7 @@ const HeroSection = ({ desktopLayout }) => {
     >
       {' '}
       <Typography variant="h2" align="center">
-        Lets{' '}
+        Let's{' '}
         <TypewriterEffect
           component="span"
           options={{
