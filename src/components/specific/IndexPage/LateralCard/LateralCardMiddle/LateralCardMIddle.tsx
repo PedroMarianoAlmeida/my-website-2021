@@ -34,7 +34,7 @@ const LateralCardMiddle = ({ backgroundColor, desktopLayout }) => {
       <Divider className={classes.divider} />
       <SkillSection />
       <Divider className={classes.divider} />
-      <SoftSkillsSection />
+      <SoftSkillsSection desktopLayout={desktopLayout} />
     </Box>
   )
 }
