@@ -16,7 +16,7 @@ const TypewriterEffect: TypewriterType = Typewriter as any
 const HeroSection = ({ desktopLayout }) => {
   return (
     <Box
-      height={desktopLayout ? '8rem' : '12rem'}
+      height={desktopLayout ? '8rem' : '16rem'}
       display="flex"
       alignItems="center"
       my={1}
