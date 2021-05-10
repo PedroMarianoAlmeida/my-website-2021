@@ -6,28 +6,34 @@ import LanguageSection from './LanguageSection'
 import SkillSection from './SkillSection'
 import SoftSkillsSection from './SoftSkillsSection'
 
-const LateralCardMiddle = ({ backgroundColor }) => {
+const LateralCardMiddle = ({ backgroundColor, desktopLayout }) => {
   const useStyles = makeStyles((theme) => ({
-    root: {
+    rootDesktop: {
       backgroundColor,
+      overflow: 'auto',
+      flex: '0 1 40vh',
+    },
+
+    rootMobile: {
+      backgroundColor,
+    },
+
+    divider: {
+      padding: `0 ${theme.spacing(1)}px `,
     },
   }))
 
   const classes = useStyles()
 
   return (
-    <Box className={classes.root}>
+    <Box
+      className={desktopLayout ? classes.rootDesktop : classes.rootMobile}
+      height="100%"
+    >
       <LanguageSection />
-      <Box px={2}>
-        <Divider />
-      </Box>
-
+      <Divider className={classes.divider} />
       <SkillSection />
-
-      <Box px={2}>
-        <Divider />
-      </Box>
-
+      <Divider className={classes.divider} />
       <SoftSkillsSection />
     </Box>
   )

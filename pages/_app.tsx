@@ -7,16 +7,16 @@ import { ThemeProvider, makeStyles } from '@material-ui/core/styles'
 import theme from './../src/lib/theme'
 import MyMenu from '../src/components/specific/Menu/MyMenu'
 
-const useStyles = makeStyles((appBarHeight) => ({
-  content: {
-    marginTop: '64px',
-  },
-}))
-
 const appBarHeight = '64px'
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const classes = useStyles(appBarHeight)
+  const useStyles = makeStyles({
+    content: {
+      marginTop: appBarHeight,
+    },
+  })
+  const classes = useStyles()
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />

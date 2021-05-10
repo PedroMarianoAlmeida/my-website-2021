@@ -33,7 +33,7 @@ const SoftSkillsSection = () => {
   )
 
   return (
-    <>
+    <Box>
       <Typography align="center" variant="h6">
         Skills
       </Typography>
@@ -42,7 +42,7 @@ const SoftSkillsSection = () => {
           <Item skill={skill} key={skill} />
         ))}
       </List>
-    </>
+    </Box>
   )
 }
 

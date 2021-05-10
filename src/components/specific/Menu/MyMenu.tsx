@@ -3,14 +3,14 @@ import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
 
-const useStyles = makeStyles((appBarHeight) => ({
-  root: {
-    height: '64px',
-  },
-}))
-
 const MyMenu = ({ appBarHeight }) => {
-  const classes = useStyles(appBarHeight)
+  const useStyles = makeStyles({
+    root: {
+      height: appBarHeight,
+    },
+  })
+
+  const classes = useStyles()
 
   return (
     <AppBar className={classes.root}>

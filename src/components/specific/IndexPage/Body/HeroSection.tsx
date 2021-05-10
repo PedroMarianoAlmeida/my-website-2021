@@ -15,7 +15,7 @@ const TypewriterEffect: TypewriterType = Typewriter as any
 
 const HeroSection = () => {
   return (
-    <Box height="8rem" display="flex" alignItems="center">
+    <Box height="8rem">
       {' '}
       <Typography variant="h2" align="center">
         Lets{' '}

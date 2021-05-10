@@ -1,30 +1,29 @@
-import Box from '@material-ui/core/Box'
 import Paper from '@material-ui/core/Paper'
+import { makeStyles } from '@material-ui/core/styles'
 
 import LateralCardTop from './LateralCardTop'
 import LateralCardBottom from './LateralCardBottom'
 import LateralCardMiddle from './LateralCardMiddle/LateralCardMIddle'
 
+const useStyles = makeStyles({
+  root: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
+})
+
 const LateralCard = ({ desktopLayout }) => {
+  const classes = useStyles()
   return (
-    <Paper variant="outlined" square elevation={3}>
-      <Box
-        display="flex"
-        height={desktopLayout ? '67vh' : null}
-        flexDirection="column"
-      >
-        <Box>
-          <LateralCardTop backgroundColor="#d52b1e" />
-        </Box>
+    <Paper variant="outlined" square elevation={3} className={classes.root}>
+      <LateralCardTop backgroundColor="#d52b1e" />
 
-        <Box overflow="auto" flexGrow={1} flexShrink={1}>
-          <LateralCardMiddle backgroundColor="#EA7067" />
-        </Box>
+      <LateralCardMiddle
+        backgroundColor="#EA7067"
+        desktopLayout={desktopLayout}
+      />
 
-        <Box height="20px">
-          <LateralCardBottom backgroundColor="#d52b1e" />
-        </Box>
-      </Box>
+      <LateralCardBottom backgroundColor="#d52b1e" />
     </Paper>
   )
 }
