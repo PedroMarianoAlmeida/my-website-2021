@@ -19,6 +19,7 @@ const HeroSection = ({ desktopLayout }) => {
       height={desktopLayout ? '8rem' : '16rem'}
       display="flex"
       alignItems="center"
+      justifyContent="center"
       my={1}
     >
       {' '}
