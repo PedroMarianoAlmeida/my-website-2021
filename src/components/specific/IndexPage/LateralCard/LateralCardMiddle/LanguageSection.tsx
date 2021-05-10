@@ -22,38 +22,26 @@ const LanguageSection = () => {
         flexWrap="wrap"
       >
         <AvatarWithCaption
-          avatarAddress="/images/languages/canada.svg"
+          avatarAddress="/images/languages/UK Flag.png"
           alt="English Skill Medium"
           caption={
-            <>
+            <Box display="flex" justifyContent="space-between" mt={1}>
               <FontAwesomeIcon icon={fullStar} />
               <FontAwesomeIcon icon={fullStar} />
               <FontAwesomeIcon icon={emptyStar} />
-            </>
+            </Box>
           }
         />
 
         <AvatarWithCaption
-          avatarAddress="/images/languages/quebec.svg"
-          alt="French Skill Basic"
-          caption={
-            <>
-              <FontAwesomeIcon icon={fullStar} />
-              <FontAwesomeIcon icon={emptyStar} />
-              <FontAwesomeIcon icon={emptyStar} />
-            </>
-          }
-        />
-
-        <AvatarWithCaption
-          avatarAddress="/images/languages/brazil_flag.png"
+          avatarAddress="/images/languages/Flag_of_Portugal.svg.png"
           alt="Portuguese Skill Fluent"
           caption={
-            <>
+            <Box display="flex" justifyContent="space-between" mt={1}>
               <FontAwesomeIcon icon={fullStar} />
               <FontAwesomeIcon icon={fullStar} />
               <FontAwesomeIcon icon={fullStar} />
-            </>
+            </Box>
           }
         />
       </Box>
