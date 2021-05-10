@@ -13,9 +13,14 @@ type TypewriterType = FunctionComponent<{
 
 const TypewriterEffect: TypewriterType = Typewriter as any
 
-const HeroSection = () => {
+const HeroSection = ({ desktopLayout }) => {
   return (
-    <Box height="8rem">
+    <Box
+      height={desktopLayout ? '8rem' : '12rem'}
+      display="flex"
+      alignItems="center"
+      my={1}
+    >
       {' '}
       <Typography variant="h2" align="center">
         Lets{' '}

@@ -14,8 +14,8 @@ const BodyStructure = ({ desktopLayout }) => {
       justifyContent="center"
       width="100%"
     >
-      <HeroSection />
-      <WorkTypes />
+      <HeroSection desktopLayout={desktopLayout} />
+      <WorkTypes desktopLayout={desktopLayout} />
       <ActionButtons />
     </Box>
   )
