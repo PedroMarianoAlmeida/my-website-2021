@@ -4,9 +4,10 @@ import { makeStyles } from '@material-ui/core/styles'
 import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
-import CardMedia from '@material-ui/core/CardMedia'
 import Box from '@material-ui/core/Box'
 import CardHeader from '@material-ui/core/CardHeader'
+
+import ProjectMedia from './ProjectMedia'
 
 const useStyles = makeStyles((theme) => ({
   rootMobile: {
@@ -30,19 +31,6 @@ const useStyles = makeStyles((theme) => ({
 
   headerDesktop: {
     gridArea: 'header',
-  },
-
-  mediaDesktop: {
-    width: '100%',
-    aspectRatio: `${560 / 315}`,
-    gridArea: 'media',
-    margin: theme.spacing(1),
-  },
-
-  mediaMobile: {
-    width: '80vw',
-    aspectRatio: `${560 / 315}`,
-    alignSelf: 'center',
   },
 
   contentDesktop: {
@@ -71,28 +59,25 @@ const Project = ({ desktopLayout }) => {
         className={classes.headerDesktop}
       />
 
-      <CardMedia
-        component="iframe"
-        image="https://www.youtube.com/embed/Ke90Tje7VS0"
-        className={`${
-          desktopLayout ? classes.mediaDesktop : classes.mediaMobile
-        }`}
-        title="Contemplative Reptile"
-      />
+      <ProjectMedia desktopLayout={desktopLayout} />
 
       <CardContent className={classes.contentDesktop}>
         <Box>
           <Typography variant="h6" display="inline">
             Type:{' '}
           </Typography>
-          <Typography display="inline">Lorem </Typography>
+          <Typography display="inline">Open Source</Typography>
         </Box>
 
-        <Box>
+        <Box display="flex" alignContent="center">
           <Typography variant="h6" display="inline">
             Description:{' '}
           </Typography>
-          <Typography display="inline">Lorem </Typography>
+          <Typography display="inline">
+            Full stack project developed for testing and prototyping
+            applications that use Geographical Coordinates, returning latitude
+            and longitude based on parameters in endpoints{' '}
+          </Typography>
         </Box>
 
         <Box>

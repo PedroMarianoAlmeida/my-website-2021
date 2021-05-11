@@ -18,7 +18,7 @@ const Portfolio = ({ desktopLayout }) => {
       <Typography
         variant="h1"
         align="center"
-        className={desktopLayout && classes.titleResponsive}
+        className={desktopLayout ? classes.titleResponsive : ''}
       >
         Portfolio
       </Typography>
