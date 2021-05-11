@@ -1,11 +1,10 @@
 import Box from '@material-ui/core/Box'
 import LateralCard from '../src/components/specific/IndexPage/LateralCard/LateralCard'
-import useMediaQuery from '@material-ui/core/useMediaQuery'
 import BodyStructure from '../src/components/specific/IndexPage/Body/BodyStructure'
 
 import { makeStyles } from '@material-ui/core/styles'
 
-export default function Home({ appBarHeight }) {
+export default function Home({ appBarHeight, desktopLayout }) {
   const useStyles = makeStyles({
     rootDesktop: {
       display: 'grid',
@@ -22,7 +21,6 @@ export default function Home({ appBarHeight }) {
   })
 
   const classes = useStyles()
-  const desktopLayout = useMediaQuery('(min-width:960px)') //md break point
 
   return (
     <Box className={desktopLayout ? classes.rootDesktop : classes.rootMobile}>

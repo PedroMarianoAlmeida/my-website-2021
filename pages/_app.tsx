@@ -24,7 +24,11 @@ function MyApp({ Component, pageProps }: AppProps) {
       <CssBaseline />
       <MyMenu appBarHeight={appBarHeight} desktopLayout={desktopLayout} />
       <Box className={classes.content}>
-        <Component {...pageProps} appBarHeight={appBarHeight} />
+        <Component
+          {...pageProps}
+          appBarHeight={appBarHeight}
+          desktopLayout={desktopLayout}
+        />
       </Box>
     </ThemeProvider>
   )
