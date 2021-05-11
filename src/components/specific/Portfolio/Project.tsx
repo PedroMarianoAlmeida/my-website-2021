@@ -36,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
     aspectRatio: `${560 / 315}`,
     width: '100%',
     gridArea: 'media',
+    margin: theme.spacing(1),
   },
 
   contentDesktop: {
