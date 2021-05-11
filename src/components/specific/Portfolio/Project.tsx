@@ -8,6 +8,7 @@ import Box from '@material-ui/core/Box'
 import CardHeader from '@material-ui/core/CardHeader'
 
 import ProjectMedia from './ProjectMedia'
+import ProjectText from './ProjectText'
 
 const useStyles = makeStyles((theme) => ({
   rootMobile: {
@@ -62,23 +63,13 @@ const Project = ({ desktopLayout }) => {
       <ProjectMedia desktopLayout={desktopLayout} />
 
       <CardContent className={classes.contentDesktop}>
-        <Box>
-          <Typography variant="h6" display="inline">
-            Type:{' '}
-          </Typography>
-          <Typography display="inline">Open Source</Typography>
-        </Box>
-
-        <Box display="flex" alignContent="center">
-          <Typography variant="h6" display="inline">
-            Description:{' '}
-          </Typography>
-          <Typography display="inline">
-            Full stack project developed for testing and prototyping
+        <ProjectText field="Type" description="Open Source" />
+        <ProjectText
+          field="Description"
+          description="Full stack project developed for testing and prototyping
             applications that use Geographical Coordinates, returning latitude
-            and longitude based on parameters in endpoints{' '}
-          </Typography>
-        </Box>
+            and longitude based on parameters in endpoints"
+        />
 
         <Box>
           <Typography variant="h6" display="inline">
