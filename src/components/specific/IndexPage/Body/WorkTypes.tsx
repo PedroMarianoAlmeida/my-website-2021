@@ -5,7 +5,7 @@ const WorkTypes = ({ desktopLayout }) => {
   return (
     <Box my={3}>
       <Typography align="center" variant="h3">
-        I worked with
+        I work with
       </Typography>
 
       <Box

@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react'
 import Document, {
   Html,
   Head,
   Main,
   NextScript,
   DocumentContext,
-} from "next/document";
+} from 'next/document'
 
-import { ServerStyleSheets } from "@material-ui/core/styles";
-import theme from "./../src/lib/theme";
+import { ServerStyleSheets } from '@material-ui/core/styles'
+import theme from './../src/lib/theme'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -35,15 +35,15 @@ class MyDocument extends Document {
     // 4. page.render
 
     // Render app and page and get the context of the page with collected side effects.
-    const sheets = new ServerStyleSheets();
-    const originalRenderPage = ctx.renderPage;
+    const sheets = new ServerStyleSheets()
+    const originalRenderPage = ctx.renderPage
 
     ctx.renderPage = () =>
       originalRenderPage({
         enhanceApp: (App) => (props) => sheets.collect(<App {...props} />),
-      });
+      })
 
-    const initialProps = await Document.getInitialProps(ctx);
+    const initialProps = await Document.getInitialProps(ctx)
 
     return {
       ...initialProps,
@@ -52,7 +52,7 @@ class MyDocument extends Document {
         ...React.Children.toArray(initialProps.styles),
         sheets.getStyleElement(),
       ],
-    };
+    }
   }
 
   render() {
@@ -65,14 +65,19 @@ class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
       </Html>
-    );
+    )
   }
 }
 
-export default MyDocument;
+export default MyDocument
