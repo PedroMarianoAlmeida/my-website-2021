@@ -33,8 +33,8 @@ const useStyles = makeStyles((theme) => ({
   },
 
   mediaDesktop: {
-    minWidth: '560px',
-    minHeight: '315px',
+    aspectRatio: `${560 / 315}`,
+    width: '100%',
     gridArea: 'media',
   },
 
