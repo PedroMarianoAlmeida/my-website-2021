@@ -33,10 +33,16 @@ const useStyles = makeStyles((theme) => ({
   },
 
   mediaDesktop: {
-    aspectRatio: `${560 / 315}`,
     width: '100%',
+    aspectRatio: `${560 / 315}`,
     gridArea: 'media',
     margin: theme.spacing(1),
+  },
+
+  mediaMobile: {
+    width: '80vw',
+    aspectRatio: `${560 / 315}`,
+    alignSelf: 'center',
   },
 
   contentDesktop: {
@@ -68,7 +74,9 @@ const Project = ({ desktopLayout }) => {
       <CardMedia
         component="iframe"
         image="https://www.youtube.com/embed/Ke90Tje7VS0"
-        className={classes.mediaDesktop}
+        className={`${
+          desktopLayout ? classes.mediaDesktop : classes.mediaMobile
+        }`}
         title="Contemplative Reptile"
       />
 
