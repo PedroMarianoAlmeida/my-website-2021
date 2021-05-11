@@ -19,7 +19,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-const Project = ({ desktopLayout }) => {
+const Project = ({
+  desktopLayout,
+  title,
+  type,
+  description,
+  actions,
+  youtubeLink,
+}) => {
   const classes = useStyles()
 
   return (
