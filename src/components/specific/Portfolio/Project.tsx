@@ -9,6 +9,7 @@ import CardHeader from '@material-ui/core/CardHeader'
 
 import ProjectMedia from './ProjectMedia'
 import ProjectText from './ProjectText'
+import ProjectCard from './ProjectCard'
 
 const useStyles = makeStyles((theme) => ({
   rootMobile: {
@@ -49,11 +50,7 @@ const Project = ({ desktopLayout }) => {
   const classes = useStyles()
 
   return (
-    <Card
-      elevation={1}
-      variant="outlined"
-      className={`${desktopLayout ? classes.rootDesktop : classes.rootMobile}`}
-    >
+    <ProjectCard desktopLayout={desktopLayout}>
       <CardHeader
         title="Dummy Coordinate"
         align="center"
@@ -87,7 +84,7 @@ const Project = ({ desktopLayout }) => {
           Visit Page
         </Button>
       </CardActions>
-    </Card>
+    </ProjectCard>
   )
 }
 
