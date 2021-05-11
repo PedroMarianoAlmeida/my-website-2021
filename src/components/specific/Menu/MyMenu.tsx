@@ -14,12 +14,14 @@ const MyMenu = ({ appBarHeight }) => {
     menu: {
       display: 'flex',
       alignItems: 'center',
+      height: '100%',
     },
 
     title: {
       flexGrow: 1,
       textAlign: 'center',
       fontFamily: 'Special Elite',
+      fontSize: '2rem',
     },
   })
 
