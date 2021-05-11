@@ -1,6 +1,7 @@
+import Link from 'next/link'
+
 import Button from '@material-ui/core/Button'
 import Box from '@material-ui/core/Box'
-
 import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles({
@@ -16,14 +17,11 @@ const ActionButtons = () => {
 
   return (
     <Box display="flex" justifyContent="center">
-      <Button
-        className={classes.button}
-        variant="contained"
-        color="primary"
-        size="large"
-      >
-        Portfolio
-      </Button>
+      <Link href="/portfolio">
+        <Button className={classes.button} variant="contained" color="primary">
+          Portfolio
+        </Button>
+      </Link>
 
       <Button className={classes.button} variant="contained" color="primary">
         Contact
