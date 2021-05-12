@@ -25,16 +25,7 @@ const Portfolio = ({ desktopLayout }) => {
         Portfolio
       </Typography>
       {portfolioData.map((projectData) => (
-        <Project
-          desktopLayout={desktopLayout}
-          title={projectData.title}
-          type={projectData.type}
-          summary={projectData.summary}
-          actions={projectData.actions}
-          youtubeLink={projectData.youtubeLink}
-          key={projectData.title}
-          techStack={projectData.techStack}
-        />
+        <Project desktopLayout={desktopLayout} projectData={projectData} />
       ))}
     </Container>
   )

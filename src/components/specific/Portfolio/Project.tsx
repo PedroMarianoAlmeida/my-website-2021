@@ -1,6 +1,4 @@
-import Typography from '@material-ui/core/Typography'
 import CardContent from '@material-ui/core/CardContent'
-import Box from '@material-ui/core/Box'
 import CardHeader from '@material-ui/core/CardHeader'
 import { makeStyles } from '@material-ui/core/styles'
 
@@ -8,8 +6,8 @@ import ProjectMedia from './ProjectMedia'
 import ProjectText from './ProjectText'
 import ProjectCard from './ProjectCard'
 import ProjectActions from './ProjectActions'
-import SkillLogoFlexbox from '../SkillLogoFlexbox'
 import ProjectTechStack from './ProjectTechStack'
+import ProjectHightLight from './ProjecHightLight'
 
 const useStyles = makeStyles((theme) => ({
   headerDesktop: {
@@ -26,34 +24,30 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-const Project = ({
-  desktopLayout,
-  title,
-  type,
-  summary,
-  actions,
-  youtubeLink,
-  techStack,
-}) => {
+const Project = ({ desktopLayout, projectData }) => {
   const classes = useStyles()
 
   return (
     <ProjectCard desktopLayout={desktopLayout}>
       <CardHeader
-        title={title}
+        title={projectData.title}
         align="center"
         className={classes.headerDesktop}
       />
 
-      <ProjectMedia desktopLayout={desktopLayout} youtubeLink={youtubeLink} />
+      <ProjectMedia
+        desktopLayout={desktopLayout}
+        youtubeLink={projectData.youtubeLink}
+      />
 
       <CardContent className={classes.contentDesktop}>
-        <ProjectText field="Type" description={type} />
-        <ProjectText field="Summary" description={summary} />
-        <ProjectTechStack techStack={techStack} />
+        <ProjectText field="Type" description={projectData.type} />
+        <ProjectText field="Summary" description={projectData.summary} />
+        <ProjectTechStack techStack={projectData.techStack} />
+        <ProjectHightLight highlightFeatures={projectData.highlightFeatures} />
       </CardContent>
 
-      <ProjectActions actions={actions} />
+      <ProjectActions actions={projectData.actions} />
     </ProjectCard>
   )
 }

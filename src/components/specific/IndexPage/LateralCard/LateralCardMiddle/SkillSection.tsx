@@ -23,7 +23,7 @@ const SkillSection = () => {
         Tech Stack
       </Typography>
 
-      <SkillLogoFlexbox skillNames={allSkillNames} />
+      <SkillLogoFlexbox skillNames={allSkillNames} justifyContent="center" />
     </Box>
   )
 }

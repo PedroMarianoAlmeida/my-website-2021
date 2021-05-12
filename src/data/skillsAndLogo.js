@@ -17,6 +17,8 @@ const skills = [
   { name: 'Heroku', path: 'heroku.svg' },
   { name: 'HTML', path: 'html.svg' },
 
+  { name: 'VS Code', path: 'vs-code.svg' },
+  { name: 'Markdown', path: 'markdown.svg' },
   { name: 'Prettier', path: 'prettier.svg' },
   { name: 'Formik', path: 'formik.png' },
 ]
