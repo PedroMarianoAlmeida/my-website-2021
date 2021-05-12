@@ -16,13 +16,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-const ProjectMedia = ({ desktopLayout }) => {
+const ProjectMedia = ({ desktopLayout, youtubeLink }) => {
   const classes = useStyles()
 
   return (
     <CardMedia
       component="iframe"
-      image="https://www.youtube.com/embed/Ke90Tje7VS0"
+      image={youtubeLink}
       className={`${
         desktopLayout ? classes.mediaDesktop : classes.mediaMobile
       }`}

@@ -23,7 +23,7 @@ const Project = ({
   desktopLayout,
   title,
   type,
-  description,
+  summary,
   actions,
   youtubeLink,
 }) => {
@@ -32,21 +32,16 @@ const Project = ({
   return (
     <ProjectCard desktopLayout={desktopLayout}>
       <CardHeader
-        title="Dummy Coordinate"
+        title={title}
         align="center"
         className={classes.headerDesktop}
       />
 
-      <ProjectMedia desktopLayout={desktopLayout} />
+      <ProjectMedia desktopLayout={desktopLayout} youtubeLink={youtubeLink} />
 
       <CardContent className={classes.contentDesktop}>
-        <ProjectText field="Type" description="Open Source" />
-        <ProjectText
-          field="Description"
-          description="Full stack project developed for testing and prototyping
-            applications that use Geographical Coordinates, returning latitude
-            and longitude based on parameters in endpoints"
-        />
+        <ProjectText field="Type" description={type} />
+        <ProjectText field="Summary" description={summary} />
 
         <Box>
           <Typography variant="h6" display="inline">
@@ -56,9 +51,7 @@ const Project = ({
         </Box>
       </CardContent>
 
-      <ProjectActions
-        actions={[{ text: 'See Code' }, { text: 'Visit Page' }]}
-      />
+      <ProjectActions actions={actions} />
     </ProjectCard>
   )
 }

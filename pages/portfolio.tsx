@@ -8,9 +8,15 @@ const projectsData = [
   {
     title: 'Dummy Coordinate',
     type: 'Open Source',
-    description:
+    summary:
       'Full stack project developed for testing and prototyping applications that use Geographical Coordinates, returning latitude and longitude based on parameters in endpoints',
-    actions: [{ text: 'See Code' }, { text: 'Visit Page' }],
+    actions: [
+      {
+        text: 'See Code',
+        link: 'https://github.com/PedroMarianoAlmeida/random-coordinate',
+      },
+      { text: 'Visit Page', link: 'https://dummy-coordinate.vercel.app/' },
+    ],
     youtubeLink: 'https://www.youtube.com/embed/Ke90Tje7VS0',
   },
 ]
@@ -18,6 +24,7 @@ const projectsData = [
 const useStyles = makeStyles((theme) => ({
   titleResponsive: {
     fontSize: '2rem',
+    marginTop: theme.spacing(2),
   },
 }))
 
@@ -29,7 +36,7 @@ const Portfolio = ({ desktopLayout }) => {
       <Typography
         variant="h1"
         align="center"
-        className={desktopLayout ? classes.titleResponsive : ''}
+        className={desktopLayout ? '' : classes.titleResponsive}
       >
         Portfolio
       </Typography>
@@ -38,9 +45,10 @@ const Portfolio = ({ desktopLayout }) => {
           desktopLayout={desktopLayout}
           title={projectData.title}
           type={projectData.type}
-          description={projectData.description}
+          summary={projectData.summary}
           actions={projectData.actions}
           youtubeLink={projectData.youtubeLink}
+          key={projectData.title}
         />
       ))}
     </Container>
