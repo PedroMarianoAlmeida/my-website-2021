@@ -1,59 +1,29 @@
-import Image from 'next/image'
-
 import Typography from '@material-ui/core/Typography'
 import Box from '@material-ui/core/Box'
-import Tooltip from '@material-ui/core/Tooltip'
+import { makeStyles } from '@material-ui/core/styles'
 
-const skills = [
-  { name: 'JavaScript', path: 'javascript.svg' },
-  { name: 'TypeScript', path: 'typescript.svg' },
-  { name: 'React', path: 'react.svg' },
-  { name: 'Next.js', path: 'next-js.svg' },
-  { name: 'Firebase', path: 'firebase.svg' },
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    flexDirection: 'column',
+    margin: `${theme.spacing(1)}px 0`,
+  },
+}))
 
-  { name: 'Git', path: 'git.svg' },
-  { name: 'Github', path: 'github.svg' },
-
-  { name: 'CSS', path: 'css.svg' },
-  { name: 'Material UI', path: 'material-ui.svg' },
-  { name: 'Bootstrap', path: 'bootstrap.svg' },
-  { name: 'Tailwind', path: 'tailwind.svg' },
-
-  { name: 'Graphql', path: 'graphql.svg' },
-  { name: 'Heroku', path: 'heroku.svg' },
-  { name: 'HTML', path: 'html.svg' },
-
-  { name: 'Prettier', path: 'prettier.svg' },
-]
+import skills from './../../../../../data/skillsAndLogo'
+import SkillLogoFlexbox from '../../../SkillLogoFlexbox'
 
 const SkillSection = () => {
-  return (
-    <Box display="flex" flexDirection="column">
-      <Box my={1}>
-        <Typography align="center" variant="h6">
-          Tech Stack
-        </Typography>
+  const classes = useStyles()
+  const allSkillNames = skills.map((skill) => skill.name)
 
-        <Box
-          display="flex"
-          flexDirection="row"
-          flexWrap="wrap"
-          justifyContent="center"
-        >
-          {skills.map((skill) => (
-            <Tooltip title={skill.name} placement="top" key={skill.name}>
-              <Box m={1}>
-                <Image
-                  alt={skill.name}
-                  src={`/images/logos/${skill.path}`}
-                  height={40}
-                  width={40}
-                />
-              </Box>
-            </Tooltip>
-          ))}
-        </Box>
-      </Box>
+  return (
+    <Box className={classes.root}>
+      <Typography align="center" variant="h6">
+        Tech Stack
+      </Typography>
+
+      <SkillLogoFlexbox skillNames={allSkillNames} />
     </Box>
   )
 }

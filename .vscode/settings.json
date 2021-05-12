@@ -1,7 +1,10 @@
 {
     "prettier.configPath": ".prettierrc.json",
     "cSpell.words": [
+        "flexbox",
         "link",
+        "logo",
+        "skill",
         "youtube"
     ]
 }

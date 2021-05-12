@@ -8,6 +8,7 @@ import ProjectMedia from './ProjectMedia'
 import ProjectText from './ProjectText'
 import ProjectCard from './ProjectCard'
 import ProjectActions from './ProjectActions'
+import SkillLogoFlexbox from '../SkillLogoFlexbox'
 
 const useStyles = makeStyles((theme) => ({
   headerDesktop: {
@@ -26,6 +27,7 @@ const Project = ({
   summary,
   actions,
   youtubeLink,
+  techStack,
 }) => {
   const classes = useStyles()
 
@@ -47,7 +49,7 @@ const Project = ({
           <Typography variant="h6" display="inline">
             Tech Stack:{' '}
           </Typography>
-          <Typography display="inline">Lorem </Typography>
+          <SkillLogoFlexbox skillNames={techStack} />
         </Box>
       </CardContent>
 

@@ -10,6 +10,13 @@ const projectsData = [
     type: 'Open Source',
     summary:
       'Full stack project developed for testing and prototyping applications that use Geographical Coordinates, returning latitude and longitude based on parameters in endpoints',
+    highlightFeatures: [
+      'Web API development',
+      'Documentation Writing',
+      'Google Maps API',
+      'useFormik',
+    ],
+    techStack: ['JavaScript', 'TypeScript'],
     actions: [
       {
         text: 'See Code',
@@ -49,6 +56,7 @@ const Portfolio = ({ desktopLayout }) => {
           actions={projectData.actions}
           youtubeLink={projectData.youtubeLink}
           key={projectData.title}
+          techStack={projectData.techStack}
         />
       ))}
     </Container>
