@@ -13,6 +13,7 @@ const portfolioData = [
       'React',
       'Tailwind',
       'TypeScript',
+      'Storybook',
       'JavaScript',
       'Next.js',
       'Github',
@@ -28,6 +29,42 @@ const portfolioData = [
   },
 
   {
+    title: 'Pedro Programmer',
+    type: 'Commercial / Open Source',
+    summary: 'My professional website',
+    highlightFeatures: ['Web Design', 'Typewriter Effect'],
+    techStack: ['React', 'Material UI', 'JavaScript', 'Next.js', 'Github'],
+    actions: [
+      {
+        text: 'See Code',
+        link: 'https://github.com/PedroMarianoAlmeida/my-website-2021',
+      },
+    ],
+    youtubeLink: 'https://www.youtube.com/embed/Ke90Tje7VS0',
+  },
+
+  {
+    title: 'JavaScript Assessment',
+    type: 'Freelancer',
+    summary: " VanRack's JavaScript exam, I score 92/100",
+    highlightFeatures: ['Without Framework'],
+    techStack: [
+      'JavaScript',
+      'CSS',
+      'HTML',
+      //Add Jquery later
+    ],
+    actions: [
+      {
+        text: 'Visit Page',
+        link: 'https://stupefied-mcnulty-88e925.netlify.app/',
+      },
+    ],
+    youtubeLink: 'https://www.youtube.com/embed/Ke90Tje7VS0',
+  },
+
+  //Add https://github.com/PedroMarianoAlmeida/Web-Dev-Sifting later
+  {
     title: 'My Fridge Meal',
     type: 'Commercial',
     summary: 'Web tool for recipe searching given the ingredients',
@@ -38,8 +75,94 @@ const portfolioData = [
       'Adds',
       'Multilingual',
     ],
+    techStack: [
+      'React',
+      'Bootstrap',
+      'JavaScript',
+      'Next.js',
+      'Storybook',
+      'Github',
+    ],
+    actions: [
+      { text: 'Visit Page', link: 'https://myfridgemeal.com/' },
+      {
+        text: 'Filter Component',
+        link: 'https://affectionate-stonebraker-6ad0ad.netlify.app/?path=/story/filter-find-itens-by-text--component',
+      },
+    ],
+    youtubeLink: 'https://www.youtube.com/embed/Ke90Tje7VS0',
+  },
+  {
+    title: 'Caio Andrade Mixing',
+    type: 'Freelancer / Open Source',
+    summary: 'Musical Producer Portfólio',
+    highlightFeatures: ['Google Lighthouse', 'SEO', 'useContext'],
     techStack: ['React', 'Bootstrap', 'JavaScript', 'Next.js', 'Github'],
-    actions: [{ text: 'Visit Page', link: 'https://myfridgemeal.com/' }],
+    actions: [
+      { text: 'Visit Page', link: 'https://www.caioandrademixing.com/' },
+      {
+        text: 'See code',
+        link: 'https://github.com/PedroMarianoAlmeida/Bi-Language-Portfolio-WebApp-in-Next.js-musician-',
+      },
+    ],
+    youtubeLink: 'https://www.youtube.com/embed/Ke90Tje7VS0',
+  },
+
+  {
+    title: 'Geo-portfolio Template',
+    type: 'Open Source',
+    summary: 'Template for geographical based Portfólio',
+    highlightFeatures: ['Google Maps API', 'Vanilla CSS'],
+    techStack: ['React', 'CSS', 'JavaScript', 'Next.js', 'Storybook', 'Github'],
+    actions: [
+      { text: 'Visit Page', link: 'https://geoportfolio-template.vercel.app/' },
+      {
+        text: 'See code',
+        link: 'https://github.com/PedroMarianoAlmeida/geoportfolio-template',
+      },
+    ],
+    youtubeLink: 'https://www.youtube.com/embed/Ke90Tje7VS0',
+  },
+
+  {
+    title: 'Storybook React Components',
+    type: 'Open Source',
+    summary: 'My reusable React components',
+    highlightFeatures: ['Google Maps'],
+    techStack: [
+      'Storybook',
+      'React',
+      'CSS',
+      'JavaScript',
+      'Heroku',
+      'Git',
+      'Github',
+    ],
+    actions: [
+      {
+        text: 'Visit Page',
+        link: 'https://affectionate-stonebraker-6ad0ad.netlify.app/?path=/story/example-introduction--page',
+      },
+    ],
+    youtubeLink: 'https://www.youtube.com/embed/Ke90Tje7VS0',
+  },
+
+  {
+    title: 'Movie Finder',
+    type: 'Open Source',
+    summary: 'My first react project after graduate in AltCademy',
+    highlightFeatures: ['Dark Theme'],
+    techStack: ['React', 'Bootstrap', 'JavaScript', 'Heroku', 'Git', 'Github'],
+    actions: [
+      {
+        text: 'Visit Page',
+        link: 'https://desolate-ridge-36137.herokuapp.com/',
+      },
+      {
+        text: 'See code',
+        link: 'https://github.com/PedroMarianoAlmeida/movie-finder-react',
+      },
+    ],
     youtubeLink: 'https://www.youtube.com/embed/Ke90Tje7VS0',
   },
 ]

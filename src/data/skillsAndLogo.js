@@ -4,6 +4,7 @@ const skills = [
   { name: 'React', path: 'react.svg' },
   { name: 'Next.js', path: 'next-js.svg' },
   { name: 'Firebase', path: 'firebase.svg' },
+  { name: 'Storybook', path: 'storybook.png' },
 
   { name: 'Git', path: 'git.svg' },
   { name: 'Github', path: 'github.svg' },
@@ -21,6 +22,8 @@ const skills = [
   { name: 'Markdown', path: 'markdown.svg' },
   { name: 'Prettier', path: 'prettier.svg' },
   { name: 'Formik', path: 'formik.png' },
+
+  { name: 'Cypress', path: 'cypress.png' },
 ]
 
 export default skills
