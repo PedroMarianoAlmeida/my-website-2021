@@ -9,6 +9,7 @@ import ProjectText from './ProjectText'
 import ProjectCard from './ProjectCard'
 import ProjectActions from './ProjectActions'
 import SkillLogoFlexbox from '../SkillLogoFlexbox'
+import ProjectTechStack from './ProjectTechStack'
 
 const useStyles = makeStyles((theme) => ({
   headerDesktop: {
@@ -17,6 +18,11 @@ const useStyles = makeStyles((theme) => ({
 
   contentDesktop: {
     gridArea: 'content',
+  },
+
+  techStack: {
+    display: 'flex',
+    alignItems: 'center',
   },
 }))
 
@@ -44,13 +50,7 @@ const Project = ({
       <CardContent className={classes.contentDesktop}>
         <ProjectText field="Type" description={type} />
         <ProjectText field="Summary" description={summary} />
-
-        <Box>
-          <Typography variant="h6" display="inline">
-            Tech Stack:{' '}
-          </Typography>
-          <SkillLogoFlexbox skillNames={techStack} />
-        </Box>
+        <ProjectTechStack techStack={techStack} />
       </CardContent>
 
       <ProjectActions actions={actions} />

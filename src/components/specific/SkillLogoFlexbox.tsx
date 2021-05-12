@@ -10,13 +10,13 @@ const getSkillPath = (name) => {
   return getObject.path
 }
 
-const SkillLogoFlexbox = ({ skillNames }) => {
+const SkillLogoFlexbox = ({ skillNames, justifyContent }) => {
   return (
     <Box
       display="flex"
       flexDirection="row"
       flexWrap="wrap"
-      justifyContent="center"
+      justifyContent={justifyContent}
     >
       {skillNames.map((skillName) => (
         <Tooltip title={skillName} placement="top" key={skillName}>
