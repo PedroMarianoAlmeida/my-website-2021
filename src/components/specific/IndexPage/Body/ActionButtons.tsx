@@ -22,10 +22,11 @@ const ActionButtons = () => {
           Portfolio
         </Button>
       </Link>
-
-      <Button className={classes.button} variant="contained" color="primary">
-        Contact
-      </Button>
+      <Link href="/contact">
+        <Button className={classes.button} variant="contained" color="primary">
+          Contact
+        </Button>
+      </Link>
     </Box>
   )
 }

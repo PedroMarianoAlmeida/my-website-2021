@@ -43,6 +43,12 @@ const MenuOptions = () => {
             <Typography>Portfolio</Typography>
           </Link>
         </MenuItem>
+
+        <MenuItem onClick={handleClose}>
+          <Link href="/contact">
+            <Typography>Contact</Typography>
+          </Link>
+        </MenuItem>
         {/* <MenuItem onClick={handleClose}>About</MenuItem>
         <MenuItem onClick={handleClose}>Contact</MenuItem>
         <MenuItem onClick={handleClose}>Volunteer</MenuItem> */}

@@ -2,6 +2,7 @@ import Avatar from '@material-ui/core/Avatar'
 import Typography from '@material-ui/core/Typography'
 import Box from '@material-ui/core/Box'
 import { makeStyles } from '@material-ui/core/styles'
+import AvatarResizable from '../../../reusable/AvatarResizable'
 
 const LateralCardTop = ({ backgroundColor }) => {
   const useStyles = makeStyles((theme) => ({
@@ -26,10 +27,10 @@ const LateralCardTop = ({ backgroundColor }) => {
       boxShadow={5}
     >
       <Box alignSelf="center">
-        <Avatar
+        <AvatarResizable
           alt="Pedro Almeida Picture"
           src="/images/profile.jpeg"
-          className={classes.large}
+          spacing={10}
         />
       </Box>
       <Box my={1}>
