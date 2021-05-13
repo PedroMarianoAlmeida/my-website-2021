@@ -47,13 +47,8 @@ const portfolioData = [
     title: 'JavaScript Assessment',
     type: 'Freelancer',
     summary: " VanRack's JavaScript exam, I score 92/100",
-    highlightFeatures: ['Without Framework'],
-    techStack: [
-      'JavaScript',
-      'CSS',
-      'HTML',
-      //Add Jquery later
-    ],
+    highlightFeatures: ['No Framework'],
+    techStack: ['Jquery', 'JavaScript', 'CSS', 'HTML'],
     actions: [
       {
         text: 'Visit Page',
@@ -63,7 +58,21 @@ const portfolioData = [
     youtubeLink: 'https://www.youtube.com/embed/Ke90Tje7VS0',
   },
 
-  //Add https://github.com/PedroMarianoAlmeida/Web-Dev-Sifting later
+  {
+    title: 'Web Dev Sifting',
+    type: 'Open Source',
+    summary: 'The best tools and websites to help in Web Development',
+    highlightFeatures: ['Organization', 'Study Content'],
+    techStack: ['Markdown'],
+    actions: [
+      {
+        text: 'Visit Repo',
+        link: 'https://github.com/PedroMarianoAlmeida/Web-Dev-Sifting',
+      },
+    ],
+    youtubeLink: 'https://www.youtube.com/embed/Ke90Tje7VS0',
+  },
+
   {
     title: 'My Fridge Meal',
     type: 'Commercial',
@@ -151,7 +160,7 @@ const portfolioData = [
     title: 'Movie Finder',
     type: 'Open Source',
     summary: 'My first react project after graduate in AltCademy',
-    highlightFeatures: ['Dark Theme'],
+    highlightFeatures: ['Dark Theme', 'useContext'],
     techStack: ['React', 'Bootstrap', 'JavaScript', 'Heroku', 'Git', 'Github'],
     actions: [
       {

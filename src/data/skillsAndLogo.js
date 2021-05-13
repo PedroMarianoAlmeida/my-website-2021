@@ -17,6 +17,7 @@ const skills = [
   { name: 'Graphql', path: 'graphql.svg' },
   { name: 'Heroku', path: 'heroku.svg' },
   { name: 'HTML', path: 'html.svg' },
+  { name: 'Jquery', path: 'jquery.svg' },
 
   { name: 'VS Code', path: 'vs-code.svg' },
   { name: 'Markdown', path: 'markdown.svg' },

@@ -7,6 +7,7 @@ import Box from '@material-ui/core/Box'
 
 import { makeStyles } from '@material-ui/core/styles'
 import MenuOptions from './MenuOptions'
+import MenuLogo from './MenuLogo'
 
 const MyMenu = ({ appBarHeight, desktopLayout }) => {
   const useStyles = makeStyles({
@@ -19,16 +20,6 @@ const MyMenu = ({ appBarHeight, desktopLayout }) => {
       alignItems: 'center',
       height: '100%',
     },
-
-    title: {
-      fontFamily: 'Special Elite',
-      cursor: 'pointer',
-      display: 'inline',
-    },
-
-    titleResponsive: {
-      fontSize: '1.4rem',
-    },
   })
 
   const classes = useStyles()
@@ -36,13 +27,7 @@ const MyMenu = ({ appBarHeight, desktopLayout }) => {
   return (
     <AppBar className={classes.root}>
       <Toolbar className={classes.menu}>
-        <Box flexGrow={1} display="flex" justifyContent="center">
-          <Link href="/">
-            <Typography variant="h4" className={classes.title}>
-              {'< '}Pedro Programmer{' />'}
-            </Typography>
-          </Link>
-        </Box>
+        <MenuLogo desktopLayout={desktopLayout} />
         <MenuOptions />
       </Toolbar>
     </AppBar>
