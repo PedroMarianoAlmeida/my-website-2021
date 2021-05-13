@@ -3,9 +3,8 @@ import { useState } from 'react'
 
 import IconButton from '@material-ui/core/IconButton'
 import Snackbar from '@material-ui/core/Snackbar'
-import DeleteIcon from '@material-ui/icons/Delete'
 
-const EmailCopiedSnackbar = () => {
+const EmailCopiedSnackbar = ({ size }) => {
   const [open, setOpen] = useState(false)
 
   const handleClick = () => {
@@ -20,8 +19,8 @@ const EmailCopiedSnackbar = () => {
         <Image
           alt="pedroalmeidaprogrammer@gmail"
           src={`/images/logos/envelope.svg`}
-          height={'30px'}
-          width={'30px'}
+          height={size}
+          width={size}
         />
       </IconButton>
 

@@ -1,14 +1,14 @@
 import Image from 'next/image'
 import Link from '@material-ui/core/Link'
 
-const ContactAction = ({ src, alt, address }) => {
+const ContactAction = ({ src, alt, address, size }) => {
   return (
     <Link href={address} target="_blank" rel="noopener noreferrer">
       <Image
         alt={alt}
         src={`/images/logos/${src}`}
-        height={'30px'}
-        width={'30px'}
+        height={size}
+        width={size}
       />
     </Link>
   )
