@@ -32,8 +32,15 @@ const portfolioData = [
     title: 'Pedro Programmer',
     type: 'Commercial / Open Source',
     summary: 'My professional website',
-    highlightFeatures: ['Web Design', 'Typewriter Effect'],
-    techStack: ['React', 'Material UI', 'JavaScript', 'Next.js', 'Github'],
+    highlightFeatures: ['Web Design', 'Typewriter Effect', '.tsx'],
+    techStack: [
+      'React',
+      'Material UI',
+      'JavaScript',
+      'TypeScript',
+      'Next.js',
+      'Github',
+    ],
     actions: [
       {
         text: 'See Code',
