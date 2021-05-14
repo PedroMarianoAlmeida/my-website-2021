@@ -5,8 +5,8 @@ import { makeStyles } from '@material-ui/core/styles'
 import PageTitle from '../src/components/specific/Others/PageTitle'
 
 import AvatarResizable from './../src/components/reusable/AvatarResizable'
-import EmailCopiedSnackbar from '../src/components/specific/IndexPage/LateralCard/EmailCopiedSnackbar'
-import AnimatedImage from '../src/components/specific/Contact/AnimatedImage'
+import AnimatedExternalLink from '../src/components/specific/Contact/AnimatedExternalLink'
+import AnimatedEmailSnackbar from './../src/components/specific/Contact/AnimatedEmailSnackbar'
 
 const Contact = ({ desktopLayout, appBarHeight }) => {
   const useStyles = makeStyles({
@@ -46,6 +46,12 @@ const Contact = ({ desktopLayout, appBarHeight }) => {
     right: {
       gridArea: '2/3/2/3',
     },
+
+    centralized: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
   })
 
   const classes = useStyles()
@@ -53,9 +59,14 @@ const Contact = ({ desktopLayout, appBarHeight }) => {
   return (
     <Container className={classes.centerScreen}>
       <PageTitle title="Contact" desktopLayout={desktopLayout} />
-      <Box display="flex" justifyContent="center" alignItems="center">
+      <Box
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        flexGrow={desktopLayout ? 0 : 1}
+      >
         <Box className={classes.wrapper}>
-          <Box className={`${classes.center}`}>
+          <Box className={`${classes.center} ${classes.centralized}`}>
             <AvatarResizable
               alt="Pedro Almeida Picture"
               src="/images/profile.jpeg"
@@ -63,8 +74,8 @@ const Contact = ({ desktopLayout, appBarHeight }) => {
             />
           </Box>
 
-          <Box className={`${classes.top} `}>
-            <AnimatedImage
+          <Box className={`${classes.top} ${classes.centralized} `}>
+            <AnimatedExternalLink
               address={
                 'https://api.whatsapp.com/send?phone=+5521981853414&text=Hi%20Pedro'
               }
@@ -73,26 +84,24 @@ const Contact = ({ desktopLayout, appBarHeight }) => {
             />
           </Box>
 
-          <Box className={`${classes.left} `}>
-            <AnimatedImage
+          <Box className={`${classes.left} ${classes.centralized} `}>
+            <AnimatedExternalLink
               address={'https://www.linkedin.com/in/pedroprogrammer/'}
               alt="LinkedIn"
               src={'linkedin.svg'}
             />
           </Box>
 
-          <Box className={`${classes.right} `}>
-            <AnimatedImage
-              address={
-                'https://api.whatsapp.com/send?phone=+5521981853414&text=Hi%20Pedro'
-              }
+          <Box className={`${classes.right} ${classes.centralized}`}>
+            <AnimatedExternalLink
+              address={'https://www.t.me/pedrobrasiloficial'}
               alt="Telegram"
               src={'telegram.svg'}
             />
           </Box>
 
-          <Box className={`${classes.bottom}`}>
-            <EmailCopiedSnackbar size={'40px'} />
+          <Box className={`${classes.bottom} ${classes.centralized}`}>
+            <AnimatedEmailSnackbar />
           </Box>
         </Box>
       </Box>

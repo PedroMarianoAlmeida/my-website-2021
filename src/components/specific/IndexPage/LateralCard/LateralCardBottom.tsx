@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
 
 import ExternalIconButton from '../../../reusable/ExternalIconButton'
-import EmailCopiedSnackbar from './EmailCopiedSnackbar'
+import EmailCopiedSnackbar from '../../Others/EmailCopiedSnackbar'
 
 const socialMedia = [
   {
