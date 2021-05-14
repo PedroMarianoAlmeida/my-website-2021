@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 import Container from '@material-ui/core/Container'
 import Box from '@material-ui/core/Box'
 import { makeStyles } from '@material-ui/core/styles'
@@ -9,6 +7,7 @@ import PageTitle from '../src/components/specific/Others/PageTitle'
 import AvatarResizable from './../src/components/reusable/AvatarResizable'
 import EmailCopiedSnackbar from '../src/components/specific/IndexPage/LateralCard/EmailCopiedSnackbar'
 import ContactAction from '../src/components/specific/Contact/ContactAction'
+import AnimatedImage from '../src/components/specific/Contact/AnimatedImage'
 
 const Contact = ({ desktopLayout, appBarHeight }) => {
   const useStyles = makeStyles({
@@ -31,7 +30,6 @@ const Contact = ({ desktopLayout, appBarHeight }) => {
 
     center: {
       gridArea: '2/2/2/2',
-      display: 'flex',
     },
 
     top: {
@@ -49,22 +47,9 @@ const Contact = ({ desktopLayout, appBarHeight }) => {
     right: {
       gridArea: '2/3/2/3',
     },
-
-    buttonActionWrapper: {
-      height: '50px',
-      width: '50px',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-    },
   })
 
   const classes = useStyles()
-
-  const [mouseTop, setMouseTop] = useState(false)
-  const [mouseRight, setMouseRight] = useState(false)
-  const [mouseBottom, setMouseBottom] = useState(false)
-  const [mouseLeft, setMouseLeft] = useState(false)
 
   return (
     <Container className={classes.centerScreen}>
@@ -79,51 +64,36 @@ const Contact = ({ desktopLayout, appBarHeight }) => {
             />
           </Box>
 
-          <Box
-            className={`${classes.top} ${classes.buttonActionWrapper} `}
-            onMouseEnter={() => setMouseTop(true)}
-            onMouseLeave={() => setMouseTop(false)}
-          >
-            <ContactAction
+          <Box className={`${classes.top} `}>
+            <AnimatedImage
+              address={
+                'https://api.whatsapp.com/send?phone=+5521981853414&text=Hi%20Pedro'
+              }
               alt="Whatsapp"
-              src="whatsapp.svg"
-              address="https://api.whatsapp.com/send?phone=+5521981853414&text=Hi%20Pedro"
-              size={mouseTop ? '50px' : '40px'}
+              src={'whatsapp.svg'}
             />
           </Box>
 
-          <Box
-            className={`${classes.left} `}
-            onMouseEnter={() => setMouseLeft(true)}
-            onMouseLeave={() => setMouseLeft(false)}
-          >
-            <ContactAction
+          <Box className={`${classes.left} `}>
+            <AnimatedImage
+              address={'https://www.linkedin.com/in/pedroprogrammer/'}
               alt="LinkedIn"
-              src="linkedin.svg"
-              address="https://www.linkedin.com/in/pedroprogrammer/"
-              size={mouseLeft ? '50px' : '40px'}
+              src={'linkedin.svg'}
             />
           </Box>
 
-          <Box
-            className={`${classes.right} `}
-            onMouseEnter={() => setMouseRight(true)}
-            onMouseLeave={() => setMouseRight(false)}
-          >
-            <ContactAction
+          <Box className={`${classes.right} `}>
+            <AnimatedImage
+              address={
+                'https://api.whatsapp.com/send?phone=+5521981853414&text=Hi%20Pedro'
+              }
               alt="Telegram"
-              src="telegram.svg"
-              address="https://api.whatsapp.com/send?phone=+5521981853414&text=Hi%20Pedro"
-              size={mouseRight ? '50px' : '40px'}
+              src={'telegram.svg'}
             />
           </Box>
 
-          <Box
-            className={`${classes.bottom}`}
-            onMouseEnter={() => setMouseBottom(true)}
-            onMouseLeave={() => setMouseBottom(false)}
-          >
-            <EmailCopiedSnackbar size={mouseBottom ? '50px' : '40px'} />
+          <Box className={`${classes.bottom}`}>
+            <EmailCopiedSnackbar size={'40px'} />
           </Box>
         </Box>
       </Box>
