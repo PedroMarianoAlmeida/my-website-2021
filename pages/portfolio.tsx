@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles'
 
 import Project from '../src/components/specific/Portfolio/Project'
 import portfolioData from './../src/data/portfolioData'
-import PageTitle from '../src/components/specific/PageTitle'
+import PageTitle from '../src/components/specific/Others/PageTitle'
 
 const useStyles = makeStyles((theme) => ({
   titleResponsive: {

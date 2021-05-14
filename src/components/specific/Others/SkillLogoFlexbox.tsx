@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Box from '@material-ui/core/Box'
 import Tooltip from '@material-ui/core/Tooltip'
 
-import skills from './../../data/skillsAndLogo'
+import skills from '../../../data/skillsAndLogo'
 
 const getSkillPath = (name) => {
   const getObject = skills.filter((skill) => skill.name === name)[0]

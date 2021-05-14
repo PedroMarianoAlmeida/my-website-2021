@@ -4,8 +4,8 @@ import Container from '@material-ui/core/Container'
 import Box from '@material-ui/core/Box'
 import { makeStyles } from '@material-ui/core/styles'
 
-import PageTitle from '../src/components/specific/PageTitle'
-import ContactAction from '../src/components/specific/contact/contactAction'
+import PageTitle from '../src/components/specific/Others/PageTitle'
+import ContactAction from '../src/components/specific/Contact/ContactAction'
 import AvatarResizable from './../src/components/reusable/AvatarResizable'
 import EmailCopiedSnackbar from '../src/components/specific/IndexPage/LateralCard/EmailCopiedSnackbar'
 

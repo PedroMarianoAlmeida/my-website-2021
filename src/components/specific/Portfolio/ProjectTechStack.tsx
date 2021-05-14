@@ -2,7 +2,7 @@ import Typography from '@material-ui/core/Typography'
 import Box from '@material-ui/core/Box'
 import { makeStyles } from '@material-ui/core/styles'
 
-import SkillLogoFlexbox from '../SkillLogoFlexbox'
+import SkillLogoFlexbox from '../Others/SkillLogoFlexbox'
 
 const useStyles = makeStyles({
   techStack: {

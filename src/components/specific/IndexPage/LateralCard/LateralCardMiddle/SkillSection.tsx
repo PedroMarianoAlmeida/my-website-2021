@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 import skills from './../../../../../data/skillsAndLogo'
-import SkillLogoFlexbox from '../../../SkillLogoFlexbox'
+import SkillLogoFlexbox from '../../../Others/SkillLogoFlexbox'
 
 const SkillSection = () => {
   const classes = useStyles()

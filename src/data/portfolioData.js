@@ -25,7 +25,7 @@ const portfolioData = [
       },
       { text: 'Visit Page', link: 'https://dummy-coordinate.vercel.app/' },
     ],
-    youtubeLink: 'https://www.youtube.com/embed/Ke90Tje7VS0',
+    youtubeLink: 'https://www.youtube.com/embed/6HYqL54Vuvk',
   },
 
   {
@@ -47,7 +47,7 @@ const portfolioData = [
         link: 'https://github.com/PedroMarianoAlmeida/my-website-2021',
       },
     ],
-    youtubeLink: 'https://www.youtube.com/embed/Ke90Tje7VS0',
+    youtubeLink: 'https://www.youtube.com/embed/OKzopdFOn5k',
   },
 
   {
@@ -62,7 +62,7 @@ const portfolioData = [
         link: 'https://stupefied-mcnulty-88e925.netlify.app/',
       },
     ],
-    youtubeLink: 'https://www.youtube.com/embed/Ke90Tje7VS0',
+    youtubeLink: 'https://www.youtube.com/embed/s6qmGHnKyEc',
   },
 
   {
@@ -77,7 +77,7 @@ const portfolioData = [
         link: 'https://github.com/PedroMarianoAlmeida/Web-Dev-Sifting',
       },
     ],
-    youtubeLink: 'https://www.youtube.com/embed/Ke90Tje7VS0',
+    youtubeLink: 'https://www.youtube.com/embed/qI78mikYVbU',
   },
 
   {
@@ -106,7 +106,7 @@ const portfolioData = [
         link: 'https://affectionate-stonebraker-6ad0ad.netlify.app/?path=/story/filter-find-itens-by-text--component',
       },
     ],
-    youtubeLink: 'https://www.youtube.com/embed/Ke90Tje7VS0',
+    youtubeLink: 'https://www.youtube.com/embed/vDxMIIB8K_s',
   },
   {
     title: 'Caio Andrade Mixing',
@@ -121,7 +121,7 @@ const portfolioData = [
         link: 'https://github.com/PedroMarianoAlmeida/Bi-Language-Portfolio-WebApp-in-Next.js-musician-',
       },
     ],
-    youtubeLink: 'https://www.youtube.com/embed/Ke90Tje7VS0',
+    youtubeLink: 'https://www.youtube.com/embed/IVHrvenTWm4',
   },
 
   {
@@ -137,7 +137,7 @@ const portfolioData = [
         link: 'https://github.com/PedroMarianoAlmeida/geoportfolio-template',
       },
     ],
-    youtubeLink: 'https://www.youtube.com/embed/Ke90Tje7VS0',
+    youtubeLink: 'https://www.youtube.com/embed/nyMgjCbtmfg',
   },
 
   {
@@ -160,7 +160,7 @@ const portfolioData = [
         link: 'https://affectionate-stonebraker-6ad0ad.netlify.app/?path=/story/example-introduction--page',
       },
     ],
-    youtubeLink: 'https://www.youtube.com/embed/Ke90Tje7VS0',
+    youtubeLink: 'https://www.youtube.com/embed/QOMECeo4Ua0',
   },
 
   {
@@ -179,7 +179,7 @@ const portfolioData = [
         link: 'https://github.com/PedroMarianoAlmeida/movie-finder-react',
       },
     ],
-    youtubeLink: 'https://www.youtube.com/embed/Ke90Tje7VS0',
+    youtubeLink: 'https://www.youtube.com/embed/JzHzQoxi8P0',
   },
 ]
 
