@@ -1,8 +1,9 @@
 import Box from '@material-ui/core/Box'
 import LateralCard from '../src/components/specific/IndexPage/LateralCard/LateralCard'
 import BodyStructure from '../src/components/specific/IndexPage/Body/BodyStructure'
-
 import { makeStyles } from '@material-ui/core/styles'
+
+import TitleAndDescriptionSEO from '../src/components/reusable/TitleAndDescriptionSEO'
 
 export default function Home({ appBarHeight, desktopLayout }) {
   const useStyles = makeStyles({
@@ -23,9 +24,15 @@ export default function Home({ appBarHeight, desktopLayout }) {
   const classes = useStyles()
 
   return (
-    <Box className={desktopLayout ? classes.rootDesktop : classes.rootMobile}>
-      <BodyStructure desktopLayout={desktopLayout} />
-      <LateralCard desktopLayout={desktopLayout} />
-    </Box>
+    <>
+      <TitleAndDescriptionSEO
+        title="Pedro Programmer | Home Page"
+        description="Pedro Programmer official webpage"
+      />
+      <Box className={desktopLayout ? classes.rootDesktop : classes.rootMobile}>
+        <BodyStructure desktopLayout={desktopLayout} />
+        <LateralCard desktopLayout={desktopLayout} />
+      </Box>
+    </>
   )
 }
