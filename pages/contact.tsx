@@ -6,7 +6,6 @@ import PageTitle from '../src/components/specific/Others/PageTitle'
 
 import AvatarResizable from './../src/components/reusable/AvatarResizable'
 import EmailCopiedSnackbar from '../src/components/specific/IndexPage/LateralCard/EmailCopiedSnackbar'
-import ContactAction from '../src/components/specific/Contact/ContactAction'
 import AnimatedImage from '../src/components/specific/Contact/AnimatedImage'
 
 const Contact = ({ desktopLayout, appBarHeight }) => {
