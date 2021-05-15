@@ -9,7 +9,7 @@ const EmailCopiedSnackbar = ({ size }) => {
 
   const handleClick = () => {
     navigator.clipboard
-      .writeText('pedroalmeidaprogrammer@gmail')
+      .writeText('pedroalmeidaprogrammer@gmail.com')
       .then(() => setOpen(true))
   }
 
@@ -17,7 +17,7 @@ const EmailCopiedSnackbar = ({ size }) => {
     <>
       <IconButton aria-label="email" color="primary" onClick={handleClick}>
         <Image
-          alt="pedroalmeidaprogrammer@gmail"
+          alt="pedroalmeidaprogrammer@gmail.com"
           src={`/images/logos/envelope.svg`}
           height={size}
           width={size}
