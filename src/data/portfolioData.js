@@ -100,7 +100,7 @@ const portfolioData = [
       'Github',
     ],
     actions: [
-      { text: 'Visit Page', link: 'https://myfridgemeal.com/' },
+      { text: 'Visit Page', link: 'https://my-fridge-meal.vercel.app/' },
       {
         text: 'Filter Component',
         link: 'https://affectionate-stonebraker-6ad0ad.netlify.app/?path=/story/filter-find-itens-by-text--component',
@@ -115,7 +115,7 @@ const portfolioData = [
     highlightFeatures: ['Google Lighthouse', 'SEO', 'useContext'],
     techStack: ['React', 'Bootstrap', 'JavaScript', 'Next.js', 'Github'],
     actions: [
-      { text: 'Visit Page', link: 'https://www.caioandrademixing.com/' },
+      { text: 'Visit Page', link: 'https://caioandrademixing.vercel.app/' },
       {
         text: 'See code',
         link: 'https://github.com/PedroMarianoAlmeida/Bi-Language-Portfolio-WebApp-in-Next.js-musician-',
