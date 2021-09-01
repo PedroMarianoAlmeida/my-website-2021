@@ -81,34 +81,6 @@ const portfolioData = [
   },
 
   {
-    title: 'My Fridge Meal',
-    type: 'Commercial',
-    summary: 'Web tool for recipe searching given the ingredients',
-    highlightFeatures: [
-      'Third party web API',
-      'Google Translate API',
-      'Chained Promises',
-      'Adds',
-      'Multilingual',
-    ],
-    techStack: [
-      'React',
-      'Bootstrap',
-      'JavaScript',
-      'Next.js',
-      'Storybook',
-      'Github',
-    ],
-    actions: [
-      { text: 'Visit Page', link: 'https://my-fridge-meal.vercel.app/' },
-      {
-        text: 'Filter Component',
-        link: 'https://affectionate-stonebraker-6ad0ad.netlify.app/?path=/story/filter-find-itens-by-text--component',
-      },
-    ],
-    youtubeLink: 'https://www.youtube.com/embed/vDxMIIB8K_s',
-  },
-  {
     title: 'Caio Andrade Mixing',
     type: 'Freelancer / Open Source',
     summary: 'Musical Producer Portfólio',
