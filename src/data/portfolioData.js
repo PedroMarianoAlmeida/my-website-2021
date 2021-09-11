@@ -1,5 +1,41 @@
 const portfolioData = [
   {
+    title: 'Caio Andrade Mixing',
+    type: 'Freelancer',
+    summary: 'Musical Producer Portfólio',
+    highlightFeatures: ['Google Lighthouse', 'SEO', 'useContext'],
+    techStack: ['React', 'Bootstrap', 'JavaScript', 'Next.js', 'Github'],
+    actions: [
+      { text: 'Visit Page', link: 'https://caioandrademixing.vercel.app/' },
+      {
+        text: 'See code',
+        link: 'https://github.com/PedroMarianoAlmeida/Bi-Language-Portfolio-WebApp-in-Next.js-musician-',
+      },
+    ],
+    youtubeLink: 'https://www.youtube.com/embed/IVHrvenTWm4',
+  },
+
+  {
+    title: 'Chuck Norris Jokes',
+    type: 'Side Project',
+    summary:
+      'It is a simple website that returns a lot of jokes about Chuck Norris, the user can set up a lot of parameters to receive different results.',
+    highlightFeatures: ['useContext', 'custom hooks', 'Promise.all'],
+    techStack: ['React', 'Material UI', 'JavaScript', 'Github'],
+    actions: [
+      {
+        text: 'Visit Page',
+        link: 'https://chuck-norris-jokes-material-ui.vercel.app/',
+      },
+      {
+        text: 'See code',
+        link: 'https://github.com/PedroMarianoAlmeida/chuck-norris-jokes',
+      },
+    ],
+    youtubeLink: 'https://www.youtube.com/embed/3d3__EhX4mA',
+  },
+
+  {
     title: 'Dummy Coordinate',
     type: 'Open Source',
     summary:
@@ -30,7 +66,7 @@ const portfolioData = [
 
   {
     title: 'Pedro Programmer',
-    type: 'Commercial / Open Source',
+    type: 'Commercial',
     summary: 'My professional website',
     highlightFeatures: ['Web Design', 'Typewriter Effect', '.tsx'],
     techStack: [
@@ -48,6 +84,22 @@ const portfolioData = [
       },
     ],
     youtubeLink: 'https://www.youtube.com/embed/OKzopdFOn5k',
+  },
+
+  {
+    title: 'Geo-portfolio Template',
+    type: 'Open Source',
+    summary: 'Template for geographical based Portfólio',
+    highlightFeatures: ['Google Maps API', 'Vanilla CSS'],
+    techStack: ['React', 'CSS', 'JavaScript', 'Next.js', 'Storybook', 'Github'],
+    actions: [
+      { text: 'Visit Page', link: 'https://geoportfolio-template.vercel.app/' },
+      {
+        text: 'See code',
+        link: 'https://github.com/PedroMarianoAlmeida/geoportfolio-template',
+      },
+    ],
+    youtubeLink: 'https://www.youtube.com/embed/nyMgjCbtmfg',
   },
 
   {
@@ -78,80 +130,6 @@ const portfolioData = [
       },
     ],
     youtubeLink: 'https://www.youtube.com/embed/qI78mikYVbU',
-  },
-
-  {
-    title: 'Caio Andrade Mixing',
-    type: 'Freelancer / Open Source',
-    summary: 'Musical Producer Portfólio',
-    highlightFeatures: ['Google Lighthouse', 'SEO', 'useContext'],
-    techStack: ['React', 'Bootstrap', 'JavaScript', 'Next.js', 'Github'],
-    actions: [
-      { text: 'Visit Page', link: 'https://caioandrademixing.vercel.app/' },
-      {
-        text: 'See code',
-        link: 'https://github.com/PedroMarianoAlmeida/Bi-Language-Portfolio-WebApp-in-Next.js-musician-',
-      },
-    ],
-    youtubeLink: 'https://www.youtube.com/embed/IVHrvenTWm4',
-  },
-
-  {
-    title: 'Geo-portfolio Template',
-    type: 'Open Source',
-    summary: 'Template for geographical based Portfólio',
-    highlightFeatures: ['Google Maps API', 'Vanilla CSS'],
-    techStack: ['React', 'CSS', 'JavaScript', 'Next.js', 'Storybook', 'Github'],
-    actions: [
-      { text: 'Visit Page', link: 'https://geoportfolio-template.vercel.app/' },
-      {
-        text: 'See code',
-        link: 'https://github.com/PedroMarianoAlmeida/geoportfolio-template',
-      },
-    ],
-    youtubeLink: 'https://www.youtube.com/embed/nyMgjCbtmfg',
-  },
-
-  {
-    title: 'Storybook React Components',
-    type: 'Open Source',
-    summary: 'My reusable React components',
-    highlightFeatures: ['Google Maps'],
-    techStack: [
-      'Storybook',
-      'React',
-      'CSS',
-      'JavaScript',
-      'Heroku',
-      'Git',
-      'Github',
-    ],
-    actions: [
-      {
-        text: 'Visit Page',
-        link: 'https://affectionate-stonebraker-6ad0ad.netlify.app/?path=/story/example-introduction--page',
-      },
-    ],
-    youtubeLink: 'https://www.youtube.com/embed/QOMECeo4Ua0',
-  },
-
-  {
-    title: 'Movie Finder',
-    type: 'Open Source',
-    summary: 'My first react project after graduate in AltCademy',
-    highlightFeatures: ['Dark Theme', 'useContext'],
-    techStack: ['React', 'Bootstrap', 'JavaScript', 'Heroku', 'Git', 'Github'],
-    actions: [
-      {
-        text: 'Visit Page',
-        link: 'https://desolate-ridge-36137.herokuapp.com/',
-      },
-      {
-        text: 'See code',
-        link: 'https://github.com/PedroMarianoAlmeida/movie-finder-react',
-      },
-    ],
-    youtubeLink: 'https://www.youtube.com/embed/JzHzQoxi8P0',
   },
 ]
 
